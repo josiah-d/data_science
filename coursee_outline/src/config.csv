@@ -1,0 +1,19 @@
+# Config file to build course outline README.md
+# These (and a few other things) are substituted into
+# template.md inside %keys%,
+# e.g., the value here corresponding to a key of "foo" will be
+#       be substituted for %foo% in template.md
+# solutions:   the name of the solutions repo for the class
+#              e.g. solutions-SEA20 mean the class uses https://github.com/GalvanizeDataScience/solutions-SEA20
+# cohortid:    the cohortid in Learn, needed for links to assessments
+# campus:      the campus, needed for lecture links. a campus of "main"
+#              will include a warning in the readme to use a campus-specific
+#              readme instead
+# resources1:  the name of the (first) resources column. Additional columns may be added,
+#              but *must* be named resources2, resource3, etc.
+
+solutions, solutions
+campus, main
+cohortid, 2286
+resources0, Readings
+resources1, Intro+videos

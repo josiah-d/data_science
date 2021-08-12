@@ -1,0 +1,230 @@
+We are building a model to predict price of homes in my neighborhood. My 
+data set has 100 data points. We start by building two models using kNN with 
+k = 1 and k = 99. Compare the two models in terms of the bias variance trade 
+off. Which model is better?
+
+    A kNN model with k = 1 is a model with low bias and high variance. This model will fit
+    the training data very well but is highly dependent upon the data that happens to be in 
+    this particular training set (high variance). A kNN model with k = 99 is a model with
+    high bias and low variance. You may recall from the kNN lecture that as we increased the
+    number of neighbors, the decision boundries became smoother. Jagged decision boundries is 
+    a sign of high variance.
+
+    We cannot tell which model is better without comparing their performance on a validation set
+    or their performance across cross-validation sets.
+
+    A high bias model is very simple and ignores how the target varies as 
+    features vary. A high bias model tends to underfit the data, leading to high 
+    error on both training and testing sets.
+
+    A high variance model is very complex and fits all the patterns of variation 
+    between the target and features (to the extent that the model is flexible 
+    enough to capture all the variation.) A high variance model tends to overfit 
+    the data, fitting noise/random variations in the data. This leads to low 
+    error on a training set but very high error on a testing set.
+
+
+What are the assumptions behind OLS linear regression?
+
+    * Sample data is representative of the population
+    * True relationship between X and y is linear in the coefficients
+    * Feature matrix X is full rank 
+    * Residuals are independent.
+    * Residuals are normally distributed.
+    * Variance of the residuals is constant (homoscedastic).
+
+
+You fit a linear regression to predict SAT score with many predictors, one 
+of which is whether or not the student was homeschooled. `Beta_homeschooled = -40`.
+How do you interpret the coefficient? What might compromise the validity of the
+finding?
+
+    SHORT ANSWER:
+
+    If all other features remain unchanged, homeschoolers have a average SAT 
+    score that is 40 points less than their non-homeschooled counterparts.  This
+    result can be tested against random chance using a statistical test under 
+    the null hypothesis that the coefficient is 0.  The correctness of the 
+    interpretation hinges on the truthfulness of (linear form of the) model; and
+    further on how realistic it is to change one feature while holding all other
+    features constant.  
+
+    If interpretation of coefficients is desired, the appropriateness of the model
+    (and it's assumptions) for the data at hand should be verified.  Prediction 
+    from the model (as opposed to inference of the parameters in the model) is 
+    much less sensitive model assumption violations.
+
+    LONGER ANSWER:
+
+    Since the sign on the coefficient is negative, being homeschooled is 
+    associated with a _lower_ SAT score under this model. Under the model, it is
+    estimated that test takers that are homeschooled have SAT scores that are on
+    average _40 points lower_ than their non-homeschooled peers if _all else is equal_.
+
+    The ability to manipulate the model in this ``all else equal'' kind of way 
+    assumes that we can vary the homeschooled characteristic independently without
+    changing the other variables.  This might not actually be a realistic 
+    assumption if other characteristics affecting scores systematically differ 
+    between homeschoolers and their non-homeschooled peers.  While the prediction
+    of the model to the data is unbiased, prediction of the model changing just 
+    one variable and not the others may not be unbiased.  The model is fit on 
+    the expectation of the covaration in the features.  It is designed to make 
+    good predictions in response to this covariation.  By interpreting the effect 
+    of changing one variable with all others held fixed you are forcing the model 
+    away from how it is designed to fit the data.  
+
+    Coefficient interpretations are only true in the context of the model.  If 
+    the linear form of the model is correct, or approximately so, then this 
+    result provides an accurate (and potentially useful) characterization of the 
+    real world.  If the model has not reasonably completely captured all the 
+    variables at play in influencing test scores, then the results of the model 
+    could be misleading and misattribute the roles and influences of the features
+    examined under the model. This goes back to the fact that there is covariance
+    structure in the features and they are dependent.  When one thing changes, 
+    many things change.  The model utilizes this information when it is fit.  
+    But interpreting the coefficients is based on being to independently changes
+    features.
+
+    Hypothesis testing provides a way to examine if the association identified in
+    the model is a product of chance or justified as a true correlation observed
+    in the data.  Confidence intervals give us a way to estimate the plausible 
+    range of the coefficients effect.  And testing the null hypothesis that the 
+    coefficient is zero gives us a way to test if the association may not be 
+    present (i.e., the coefficient is zero and the associated feature would thus 
+    would not influence moel predictions).
+
+    Hypotheis testing relies on weather or not the model is a good fit for the data.
+    There are a number of assumptions at play here.  These requirements can be 
+    examined with model diagnostics and remedial measures.  The assumption of the
+    linear form can also be diagnostically examined, but interpretation is still
+    dependent upon the "all else held constant" assumption, which is not necessarily
+    the state of the data as the model is fit (there is likely some dependency 
+    between the features).* 
+    
+
+You fit a logistic regression on the same data as above, this time to predict
+whether or not a student was admitted to a 4-year university. For the logistic 
+model you get `Beta_homeschooled = -0.3`. How do you interpret this coefficient?
+Do we predict that more or less homeschoolers are admitted? Are 30% more/less 
+homeschoolers admitted, something else? 
+
+    SHORT ANSWER:
+
+    If all other features remain unchanged, since the sign on the coefficient is
+    negative, being homeschooled is associated with a _lower_ chance of admittance
+    under this model.  The interpretation of the coefficient is more complicated
+    than in linear regression as it is based on "log-odds ratios".  Hypothesis 
+    testing of the coefficient can be used to examine if the observed association
+    may be a result of chance, and confidence intervals can give us an idea of the
+    plausible range of the coefficient value. 
+
+    LONGER ANSWER;
+
+    Under the model, it is estimated that, all other features held constant, the
+    _odds_ of a homeschooled student being admitted are _lower_ than the odds of
+    a non-homeschooled student being admitted by a factor of `e^-0.3 = 0.74`.  
+    I.e., the _odds ratio (OR)_ of being of a homeschooled relative to being 
+    non-homeschooled -- the odds of admittance for homeschooled students divided
+    by the odds of admittance for non-homeschooled students -- is `e^-0.3 = 0.74`
+    (with all other features held constant). Some additional notes are as follows.
+    (i) In logistic regression the predicted values are probabilities; however 
+    (ii) _it is the LOG ODDS -- not the probabilities that are linear with respect
+    to the coefficients. (iii) In fact, the odds themselves are _multiplicative_
+    with respect to the coefficients, as indicated above (iv) `e^coef` is defined
+    to be the OR of a one unit increase in a covariate relative to the unchanged
+    covariate (_with all other covariates being equal_ and _assuming no 
+    interactions in the model_).
+
+    Since we are given no information regarding a hypothesis test of this parameter,
+    e.g., a p-value, it is unlear in this case if this estimated association is 
+    a result of chance or a robust association observed under this model or not.
+    To that end, and perhaps more informatively, it would be useful to examine a
+    confidence interval for the odds ratio of being admitted of homeschoolers 
+    compared to non-homeschoolers.  This could give us a plausible range for the 
+    effect of being homeschooled on admittance (as predicted by/under the model).
+    Such a confidence interval is a little tricky, however.  One must first create
+    a confidence interval for the coefficient, and then map the interval limits 
+    through the link function into the odds ratio space to propegate the confidence
+    interval into that space.
+
+    It should also be noted that while model assumptions play less of a role in 
+    logistic regression, all the above concerns and considerations (from problem
+    1) regarding interpretation of coefficients in linear regression have a role
+    here. I.e., the model is fit to predict outcomes given any dependencies in the
+    feature. Interpretation based on holding everyting constant and varying one 
+    feature violates the way the model is fit.*
+
+
+Regularization is applied to a linear regression model and the 
+following plots were generated.
+
+    a) The optimal value is roughly 120 (100 is acceptable) because this is the lowest point 
+    on validation learning (test set) curve.
+
+    b) 3 coefficients are non-zero when lambda is set 
+    to 150, so 3 features are used to make predictions.
+
+    c) Lasso imposes an L1 or absolute error penalty on the model 
+    coefficients which has the effect of shrinking coefficients to zero 
+    as regularization strength is increased. Ridge imposes an L2 or 
+    squared error penalty which does not have the same property of 
+    performing feature selection.
+
+
+Give an example of a confusion matrix with accuracy > 90%, but both precision
+< 10% and recall < 10%.
+
+    Accuracy is (TP+TN)/(TP+FP+TN+FN). 
+
+             Predicted
+               +   -   
+             ---------
+          + | TP | FN |
+    Actual   ---------
+          - | FP | TN |
+             ---------
+
+
+    One possible solution:
+
+             Predicted
+               +   -
+             ---------
+          + | 01 | 91 |
+    Actual   ---------
+          - | 10 |9999|
+             ---------
+             
+
+We're building a model for a spam filter. We prefer to let spam messages go
+to the inbox rather than to let nonspam go to the spam folder. Interpreting a
+true positive as correctly identifying spam, which model should we choose (A or B)
+and why?
+
+    We do not want to send real mail to the spam folder.  Therefore, we want our
+    False Positive Rate (FPR) FP/(FP+TN) to be _low_.  Secondarily, having a 
+    larger True Positive Rate (TRP) TP/(TP+FN) would be beneficial (as this is 
+    supposed to be a spam filter, after all...).  Therefore, since the red curve
+    provides us with a higher TRP for low values of the FPR compared to the blue
+    curve, we prefer the red curve (Model B). 
+
+    Note that when interpreting the ROC curve, FPR and TPR correspond _exactly_
+    to the notions of power/(1-beta) and specificity/(1-alpha), respectively. ROC
+    curves thus allows to view the alpha/beta tradeoff available for different 
+    thresholds of our testing procedure and select a threshold that is most 
+    suitable for our needs with respect to alpha and beta.
+    
+    
+Describe the process that takes place to compute a 5-fold cross-validation 
+score. Name at least two ways that cross-validation is useful to a data 
+scientist.
+
+    Partition the training set into 5 equal subsets. In turn, we will make each 
+    subset the validation set and the remaining subsets the training set for our 
+    model algorithm. The validation score is recorded for each turn/iteration. A 
+    5-fold cross-validation will produce 5 validation scores. The scores are 
+    averaged to produce the 5-fold cross-validation score for our model.
+
+    Cross-validation can be used to select the best model from a collection of 
+    models. It can be used to select the optimal value of a hyperparameter. And 
+    if performed properly, cross-validation can be used for feature selection.

@@ -1,0 +1,6 @@
+smileout,circle,300,200,150,64,64,64
+smilein,circle,300,180,150,64,64,64
+face,circle,300,200,200,255,255,0
+lefteye,circle,250,130,50,0,0,0
+righteye,circle,350,130,50,0,0,0
+smile,difference,smileout,smilein

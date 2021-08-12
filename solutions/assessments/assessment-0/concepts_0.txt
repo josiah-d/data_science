@@ -1,0 +1,42 @@
+Sample mean
+
+    While it may seem strange to take the average of coin flips, when 
+    the flip outcomes (heads or tails) are encoded as 1's and 0's, 
+    respectively, it is of course perfectly legitimate to take the 
+    average of coin flipping outcomes.  Further, this has the 
+    particularly useful benefit that it captures the proportion of 
+    flips that are heads (encoded as 1's). Since 1's and 0's are just 
+    numbers like any other, we simply take the mean of these numbers 
+    just as we would any other set of numbers. I.e., here:
+
+    ((1 + 1 + 0 + 1 + 0) / 5) = 0.6
+
+
+Probability of data given fair coin
+
+    # Solving the "S = {1,1,0,1,0}" problem:
+
+    The probability of this sequence of head flips (assuming a fair 
+    coin) is the same as *any other* sequence of head flips, i.e., 
+    (0.5)^5.
+
+    # Solving the "3 heads" problem:
+
+    The probability of seeing 3 heads in 5 flips (assuming a fair 
+    coin), (as opposed to the sequence "S = {1,1,0,1,0}"), i.e., 
+    Pr(3 heads in 5 flips), is determined by a binomial probability 
+    model with n = 5 and p = 0.5. This model gives us the following 
+    formula for the probability:
+
+    5c3 * 0.5^3 * 0.5^2 = 0.3125
+
+    5c3 is five choose three and it is equal to 5!/(3!*2!).  It is the 
+    number of ways we could get 3 heads on five flips. E.g., HHHTT or 
+    HTHTH, etc. And of course, the probability of a head or a tail on 
+    any given flip is the same at 0.5, which shows how the binomial 
+    probability distribution probabilities are produced.
+
+
+Dot product of Xy
+
+    [14 \n 10]

@@ -1,0 +1,343 @@
+Area	Repo	In prep/precourse	Importance	Standard
+Systems	unix	y	1	Use common unix commands, including ls, cat, less, cd, pwd, mv, cp, rm, grep, mkdir, and rmdir.
+Systems	unix		3	Redirect STDOUT into a file, and pipe it into another command such as wc, sort, grep, or cut.
+Systems	unix	y	1	Edit files with a text editor.
+Systems	unix		3	Make “survival edits” in vi.
+Systems	unix	y	1	Distinguish between and interpret a relative and absolute path.
+Systems	unix		4	Use job control to stop, background, foreground, and kill a process.
+Systems	unix		5	Transform a file/stream by piping into sed, awk, or perl.
+Systems	git-intro	y	1	Create a new repo on github and clone it locally.
+Systems	git-intro	y	1	Make changes on github through add-commit-push.
+Systems	git-intro		2	Update a repo with git pull and handle conflicts. 
+Systems	git-intro		3	Get a old version of a file from a branch or commit.
+Systems	git-intro		3	Switch branches and merge changes with a git branch.
+Systems	git-intro		3	Create and pull from new git remote.
+Systems	git-intro		2	Collaborate with a partner through github.
+Systems	docker		2	Explain the differences between a docker container and a virtual machine.
+Systems	docker		2	Start, stop, list, and remove docker containers on a machine.
+Systems	docker		2	Run a docker image, mapping appropriate ports and volumes.
+Systems	docker		2	Execute a shell inside a docker container.
+Systems	docker		4	Build an image from a dockerfile.
+Systems	aws		2	Configure an AWS account including setting up keys.
+Systems	aws		2	Create EC2 instances and S3 buckets.
+Systems	aws		2	Transfer data to and from S3 buckets and EC2 instances with awscli, boto3, and scp.
+Systems	aws		2	Clone a github repo to an EC2 instance, pull updates, and run it using ssh.
+Systems	aws		3	Configure an SSH tunnel to run Jupyter Notebooks on EC2 servers.
+Systems	aws		4	Assign a static IP address to an EC2 instance.
+Systems	aws		4	Start and return to a tmux session on an EC2 instance.
+Systems	aws		4	Create an IAM role to give an EC2 instance S3 access, instead of using secret keys on EC2.
+Systems	aws		4	Set up billing alerts for AWS.
+Python/programming	python-intro	y	1	Write python code in a .py file and execute from ipython or a shell.
+Python/programming	python-intro		1	Write and execute a well organized jupyter notebook with code and markdown.
+Python/programming	python-intro		1	Write code using basic python data types (int, float, string, tuple, set, list, dict) and associated methods.
+Python/programming	python-intro		1	Write functions that call other functions, using the returned value.
+Python/programming	python-intro		1	Call a function with positional and keyword arguments.
+Python/programming	python-intro		2	Write a function with default values for parameters.
+Python/programming	python-intro		2	Determine the type and methods of any variable.
+Python/programming	python-intro		2	Use print() with string literals and variable values with an f-string or the format method.
+Python/programming	python-intro		2	Use a for loop over a list and with range(), zip() and enumerate().
+Python/programming	python-intro		1	Write a list comprehension.
+Python/programming	python-intro		2	Convert a for loop into a while loop using either a boolean condition or a break statement.
+Python/programming	python-intro		3	Use list comprehension with if statements.
+Python/programming	oop		2	Explain how object-oriented programming makes code more maintainable.
+Python/programming	oop		2	Write a class with a __init__ method that sets attributes based on parameters.
+Python/programming	oop		2	Write class methods that use and set values of attributes.
+Python/programming	oop		3	Write magic methods that let the object work with operators.
+Python/programming	oop		5	Contrast object-oriented and functional programming paradigms.
+Python/programming	numpy		1	Create arrays from python lists and from lists of lists.
+Python/programming	numpy		1	Index an array using single values or slices (basic indexing).
+Python/programming	numpy		1	Find the shape of an array and explain what it means.
+Python/programming	numpy		1	Create arrays to specifications using np.zeros(), np.ones(), np.arange(), and np.linspace().
+Python/programming	numpy		3	Use the axis parameter on numpy functions.
+Python/programming	numpy		3	Use argmax and argsort to find values in one array based upon values from a corresponding array.
+Python/programming	numpy		2	Use reshape with -1 as an argument to add a dimension to an array.
+Python/programming	numpy		2	State if two given two arrays can be broadcast together, and the final shape.
+Python/programming	numpy		3	Index an array using another array (advanced indexing).
+Python/programming	pandas		1	Create a pandas dataframe from lists of data, and array, or a CSV.
+Python/programming	pandas		1	Use common methods and attributes to get basic information about a dataframe (columns, shape, size, info, describe).
+Python/programming	pandas		1	Add a new column to a dataframe from values other columns
+Python/programming	pandas		2	Use the loc and iloc indexers with single values, slices, or sequences.
+Python/programming	pandas		2	Use boolean indexing with one or more conditions.
+Python/programming	pandas		3	Use [] directly on a dataframe, and state whether an indexer in [] will select on rows or columns.
+Python/programming	pandas		3	Use groupby() and aggregate the results.
+Python/programming	pandas		5	Select data from a dataframe with a multiindex.
+Python/programming	algorithmic-complexity		3	Explain why and how computational complexity is useful.
+Python/programming	algorithmic-complexity		4	Describe why worst-case complexity can be important.
+Python/programming	algorithmic-complexity		3	Identify the computational complexity of a function of O(1), O(n), or O(n**2).
+Python/programming	algorithmic-complexity		4	Identity the computational complexity of a function of O(log(n)), O(n log(n)), or (2**n).
+Python/programming	algorithmic-complexity		3	State the computational complexity of common list and dict methods.
+Math	linear-algebra		2	Represent a vector as a 1D numpy array, or a 2D array in row or column form.
+Math	linear-algebra		1	Calculate the dot product of vectors by hand and use this to determine the angle between them.
+Math	linear-algebra		1	Calculate the magnitude and direction of a vector by hand.
+Math	linear-algebra	y	1	Calculate matrix multiplication by hand.
+Math	linear-algebra		2	Transpose a matrix by hand.
+Math	linear-algebra		3	Calculate the rank for a simple matrix by hand.
+Math	linear-algebra		3	Explain the equation for eigenvector and eigenvalues.
+Math	linear-algebra		4	Give several use cases of eigenvalues and eigenvectors.
+Math	gradient-descent		2	Explain how derivatives can be used to find a local minimum.
+Math	gradient-descent		3	Explain how gradient descent can diverge.
+Math	gradient-descent		2	Discuss the challenges of and approaches to finding global minima.
+Math	gradient-descent		3	Write pseudocode of the gradient descent and stochastic gradient descent algorithms.
+Math	gradient-descent		3	Compare and contrast gradient descent with stochastic gradient descent.
+Math	gradient-descent		4	Describe several alternatives to gradient descent.
+Web	web-scraping		3	Use pymongo and beautiful soup to pull a website’s html into a collection.
+Web	web-scraping		1	Define use cases for mongo-db as opposed to traditional RDBMS.
+Web	web-scraping		3	Use requests module to pull HTML from a web page.
+Web	web-scraping		3	Use pymongo to perform simple queries.
+Web	web-scraping		5	Use mongo shell to perform simple queries.
+Web	web-scraping		4	Perform complicated mongo queries.
+Web	flask		3	Create a Flask app that makes prediction from an unpickled model based on user input.
+Web	flask		4	Use javascript or brython to send inputted values to a server and insert the response into a page.
+Web	flask		4	Use Jinja2 templates to generate dynamic web pages.
+Web	flask		3	Explain GET and POST requests and map them to functions in Flask.
+Web	flask		4	Host Flask app in an EC2 instance at a domain name.
+Web	flask		5	Use Bootstrap for formatting an HTML page.
+Plotting/visualization	matplotlib		1	Create a plot or grid of plots with plt.subplots().
+Plotting/visualization	matplotlib		2	Attach axis and title labels.
+Plotting/visualization	matplotlib		1	Use matplotlib to generate various plots (scatter, line, bar, histogram, box, violin).
+Plotting/visualization	matplotlib		3	Use matplotlib to put multiple plots on a single axes.
+Plotting/visualization	matplotlib		3	Create a scatter matrix.
+Plotting/visualization	matplotlib		4	Create a heat map.
+Plotting/visualization	data-viz		2	Identify and remove “chart junk” from a graph.
+Plotting/visualization	data-viz		2	Identity misleading features of a graph.
+Plotting/visualization	data-viz		3	Distinguish between exploratory and explanatory graphics.
+Databases	sql-intro		1	Create queries against single tables using basic sql syntax (SELECT, CASE, FROM, WHERE, GROUP BY, HAVING, ORDER BY, aggregate functions, aliases)
+Databases	sql-intro		1	Query the result of a query using a subquery or a WITH statement (CTEs).
+Databases	sql-intro		1	Use different joins in queries (INNER, LEFT, RIGHT, FULL OUTER)
+Databases	sql-intro		2	Connect to a posgres from python and manipulate the results of a query.
+Databases	sql-intro		2	Connect to a postgres database using an IDE and query data.
+Databases	sql-intro		5	Connect to a postgres database using the command line (psql) and query data.
+Databases	sql-intro		4	Format queries according to a style.
+Databases	sql-intro		3	Write a dynamic query with psycopg2 that avoids code injection.
+Databases	sql-advanced		3	Join a table with itself (self join).
+Databases	sql-advanced		3	Explain the motivation behind normal forms for tables and the purpose of indexes, primary and foreign keys.
+Databases	sql-advanced		3	Create/drop SQL tables and views.
+Databases	sql-advanced		4	Create queries with window functions.
+Spark	spark-rdds		2	Load data into a spark RDD.
+Spark	spark-rdds		2	Describe lazy evaluation in the context of Spark.
+Spark	spark-rdds		2	Use spark to compute basic statistics.
+Spark	spark-rdds		3	Cache spark RDDs effectively to improve performance.
+Spark	spark-rdds		5	Describe the differences and similarities between MapReduce and Spark.
+Spark	spark-dfs		3	Identify the differences between a Spark DataFrame and an RDD.
+Spark	spark-dfs		2	Load data into a Spark DataFrame.
+Spark	spark-dfs		2	Transform and query a Spark DF using both SQL and DataFrame methods.
+Spark	spark-dfs		3	Use User-Defined Functions in Spark.
+Probability/statistics	probability-distributions		2	Explain the difference between probability and statistics.
+Probability/statistics	probability-distributions		1	Define a “random variable” and give real-world examples.
+Probability/statistics	probability-distributions		1	State Bayes’ law and name the terms.
+Probability/statistics	probability-distributions		3	Given examples of joint and conditional probability.
+Probability/statistics	probability-distributions		2	Identify whether two random variables are independent.
+Probability/statistics	probability-distributions		2	Give the difference between discrete and continuous distributions.
+Probability/statistics	probability-distributions		3	Calculate the number of possible outcomes using combinatorics from factorials.
+Probability/statistics	sampling-distributions		1	Give real-world examples of common distributions (bernoulli, binomial, geometric, poisson, normal, uniform, exponential, gamma).
+Probability/statistics	sampling-distributions		2	Use common methods on scipy distributions (rvs, pdf, pmf, cdf, ppf).
+Probability/statistics	sampling-distributions		2	Calculate the expectation value of a function of a discrete random variable.
+Probability/statistics	sampling-distributions		3	Calculate the expectation value of a function of a continuous random variable.
+Probability/statistics	sampling-distributions		2	Use the Law of Large Numbers and a sample to estimate an expectation value.
+Probability/statistics	sampling-distributions		2	Calculate the mean, variance, and covariances from a sample.
+Probability/statistics	sampling-distributions		5	Calculate the sample (non-biased) variance from a sample.
+Probability/statistics	sampling-distributions		2	Generate bootstrap samples from a sample.
+Probability/statistics	sampling-distributions		3	Use Bootstrap samples to estimate a confidence interview.
+Probability/statistics	maximum-likelihood		2	Define maximum likelihood estimation.
+Probability/statistics	maximum-likelihood		1	Calculate the MLE solutions for a simple discrete model.
+Probability/statistics	maximum-likelihood		2	Calculate the MLE solutions for a simple continuous model.
+Probability/statistics	central-limit-theorem		2	Explain the central limit theorem in general terms
+Probability/statistics	central-limit-theorem		3	Use the CLT to approximate the mean and standard deviation of a mean of a sample
+Probability/statistics	binomial-tests		1	Define a p-value.
+Probability/statistics	binomial-tests		3	Define a confidence interval and compare to a p-value.
+Probability/statistics	binomial-tests		3	Set up and interpret a binomial test.
+Probability/statistics	hypothesis-testing		2	Calculate the p-value of a given null hypothesis from data.
+Probability/statistics	hypothesis-testing		3	Set up and interpret a Z-test of proportions.
+Probability/statistics	hypothesis-testing		3	Set up and interpret a Welch’s t-test (one sample, independent, and paired).
+Probability/statistics	hypothesis-testing		4	Set up and interpret a χ2 test for goodness of fit, homogeneity, and independence.
+Probability/statistics	hypothesis-testing		4	Set up and interpret a Mann-Whitney test.
+Probability/statistics	hypothesis-testing		3	Discuss the advantages and disadvantages and disadvantages of non-parametric tests over parametric tests.
+Probability/statistics	hypothesis-testing		3	Design a test from scratch, including choosing a test statistic and the best null hypothesis.
+Probability/statistics	hypothesis-testing		2	Explain the importance of choosing alpha before running a test.
+Probability/statistics	hypothesis-testing		2	Identify when and how to correct for multiple-hypothesis testing.
+Probability/statistics	hypothesis-testing		2	Identify when a test involves causation and explain how to run it correctly.
+Probability/statistics	statistical-power		1	Define power, false-positive rate, standard error, effect size, and critical value, and explain how changing one affects another.
+Probability/statistics	statistical-power		2	Explain how alpha controls false-positive rate, and beta controls false-negative rate.
+Probability/statistics	statistical-power		3	Calculate the sample size necessary for a particular power and false-positive rate for a test.
+Probability/statistics	statistical-power		3	Draw curves of the null and an alternative hypothesis, showing the critical value, alpha and power.
+Probability/statistics	inferential-regression		2	Identify whether a problem involves inferential or predictive regression.
+Probability/statistics	inferential-regression		2	List the key assumptions of inferential regression.
+Probability/statistics	inferential-regression		3	Test if the assumptions of inferential regression are met on a data set.
+Probability/statistics	inferential-regression		3	Transform a data set to meet the assumptions of inferential regression.
+Probability/statistics	inferential-regression		2	Perform and interpret a linear-regression hypothesis test with statsmodels.
+Probability/statistics	inferential-regression		4	Perform and interpret a logistic-regression hypothesis test with statsmodels.
+Probability/statistics	inferential-regression		4	Use AIC/BIC to choose the best regression model.
+Probability/statistics	bayes-intro		1	State Bayes theorem and the identify the prior, likelihood, and posterior, and normalizing constant.
+Probability/statistics	bayes-intro		2	Solve a traditional Bayes theorem example (e.g., probability of disease given positive test)
+Probability/statistics	bayes-intro		2	Use Bayes theorem to update posterior repeatedly with new data points.
+Probability/statistics	bayes-intro		3	Compare MLE solutions with Bayesian estimations.
+Probability/statistics	bayes-testing		2	Use a beta distribution with Bayesian A/B testing to give the probability on an event.
+Probability/statistics	bayes-testing		2	Explain the differences between NHST and Bayesian A/B testing.
+Probability/statistics	bayes-testing		3	Explain what a conjugate prior is and how they are important.
+Probability/statistics	mcmc		3	Use PyMC3 to define a prior, likelihood, and perform MCMC to generate a posterior distribution of parameters.
+Probability/statistics	mcmc		3	Generate posterior plots.
+Probability/statistics	mcmc		3	Explain how MCMC samples from the posterior distribution.
+Probability/statistics	multi-armed-bandit		2	Explain the tradeoff between exploration and exploitation, and identify these in traditional A/B testing.
+Probability/statistics	multi-armed-bandit		3	Write code for common MAB algorithms, such as epsilon-greedy, softmax, and Bayesian bandits.
+Probability/statistics	multi-armed-bandit		3	Calculate the regret of an MAB strategy.
+Linear models	predictive-linear-regression		1	Use sklearn linear regression for prediction.
+Linear models	predictive-linear-regression		2	Interpret the coefficients of predictive linear regression in the terms of the population.
+Linear models	predictive-linear-regression		2	Describe the loss function of linear regression.
+Linear models	predictive-linear-regression		2	Incorporate interactions and categorical variables into linear regression.
+Linear models	regularized-regression		2	Describe the loss function for Lasso and Ridge regression
+Linear models	regularized-regression		1	Describe the hyperparameter for regularization with linear regression and state which direction will increase bias, and which will increase variance.
+Linear models	regularized-regression		3	Compare and contrast Lasso and Ridge regression.
+Linear models	regularized-regression		2	Use sklearn for regularized regression.
+Linear models	logistic-regression		1	List advantages and disadvantages of logistic regression compared to other machine-learning models.
+Linear models	logistic-regression		2	Place logistic regression in the taxonomy of ML algorithms.
+Linear models	logistic-regression		1	Fit, interpret, and predict with a logistic regression model in sklearn.
+Linear models	logistic-regression		2	Interpret the coefficients of logistic regression using odds ratio.
+Linear models	logistic-regression		3	Explain the key differences and similarities between logistic and linear regression.
+Supervised learning	knn		2	Use sklearn KNN for regression and classification.
+Supervised learning	knn		2	Describe the hyperparameter k for KNN and state which direction will increase bias, and which will increase variance.
+Supervised learning	knn		3	Write pseudocode for basic KNN.
+Supervised learning	knn		4	Describe how loss functions relate to KNN.
+Supervised learning	decision-trees		1	Use sklearn DT for regression and classification.
+Supervised learning	decision-trees		1	Describe max depth and other hyperparameters for DT and state which direction will increase bias, and which will increase variance.
+Supervised learning	decision-trees		2	Describe DT hyperparameters for RF and state which direction will increase bias, and which will increase variance.
+Supervised learning	decision-trees		3	Write pseudocode for basic DT.
+Supervised learning	decision-trees		3	Describe how loss functions relate to DT.
+Supervised learning	decision-trees		4	Calculate the purity gain of a DT based on a split.
+Supervised learning	random-forests-implementation		3	Write pseudocode for basic RF.
+Supervised learning	random-forests-implementation		4	Describe how loss functions relate to RF.
+Supervised learning	random-forests-application		1	Use sklearn RF for regression and classification.
+Supervised learning	random-forests-application		3	Describe number-of-features hyperparameter for RF and state which direction will increase bias, and which will increase variance.
+Supervised learning	random-forests-application		3	Describe how number-of-estimators affects the error of the RF model.
+Supervised learning	random-forests-application		3	Describe the use and meaning of feature importance for tree-based models.
+Supervised learning	random-forests-application		5	Explain and obtain OOB error from RF.
+Supervised learning	gradient-boosted-regression		1	Use sklearn GB for regression and classification.
+Supervised learning	gradient-boosted-regression		2	Describe DT hyperparameters, number-of-estimators, and subsample for GB and state which direction will increase bias, and which will increase variance.
+Supervised learning	gradient-boosted-regression		2	Describe how the learning rate and number of estimators are related in GB.
+Supervised learning	boosting-implementation		3	Write pseudocode for basic GB for regression.
+Supervised learning	boosting-implementation		3	Describe how loss functions relate to GB.
+Unsupervised learning	clustering		1	Write pseudocode for the k-means algorithm
+Unsupervised learning	clustering		2	Use the elbow and silhouette score method to determine the number of clusters.
+Unsupervised learning	clustering		5	Interpret a Silhouette plot
+Unsupervised learning	clustering		3	Interpret clusters by examining cluster centers, and exploring the data within each cluster.
+Unsupervised learning	clustering		3	Explain how repeated attempts and kmeans++ can find a global minimum.
+Unsupervised learning	clustering		3	Build and interpret a dendrogram using hierarchical clustering.
+Unsupervised learning	clustering		3	Describe the four types of linkage in hierarchical clustering.
+Unsupervised learning	clustering		3	Compare and contrast k-means and hierarchical clustering.
+Unsupervised learning	clustering		5	Describe DBSCAN clustering.
+Unsupervised learning	clustering		4	Describe how distribution-based clustering can be solved with an expectation-maximization algorithm.
+Unsupervised learning	clustering		3	Describe the difference betwen hard and soft clustering.
+Unsupervised learning	pca		3	List reasons for reducing the dimensions.
+Unsupervised learning	pca		2	Describe how the principal components are constructed in PCA.
+Unsupervised learning	pca		3	Determine the number of principal components to keep to retain some percent of variance.
+Unsupervised learning	pca		3	Compute and interpret PCA using sklearn.
+Unsupervised learning	pca		3	Use PCA in sklearn to generate a lower-dimensional representation of data.
+Unsupervised learning	pca		4	Explain the difference between PCA and t-SNE.
+Unsupervised learning	svd		3	Interpret the U and V matrices in SVD in terms of latent features.
+Unsupervised learning	svd		3	Use SVD in python to generate a lower-dimensional representation of data.
+Unsupervised learning	svd		4	Use SVD in python to make recommendations.
+Unsupervised learning	svd		4	Describe the relationship between PCA and SVD.
+Unsupervised learning	topic-modeling		2	Write down and explain the NMF equation.
+Unsupervised learning	topic-modeling		3	Compare and contrast NMF, SVD, and PCA, and k-means clustering.
+Unsupervised learning	topic-modeling		3	Implement the Alternating-Least-Squares algorithm for NMF.
+Unsupervised learning	topic-modeling		3	Find and interpret latent topics with NMF from the W and H matrices.
+Unsupervised learning	topic-modeling		4	Use NMF in python to make recommendations.
+Unsupervised learning	topic-modeling		4	Explain how NMF can be regularized.
+Unsupervised learning	graphs-searching		2	Define graphs and common graph terms (node, edge, directed, connected, weighted, cycle, etc.)
+Unsupervised learning	graphs-searching		3	Discuss different data structures for representing graphs (edge list, adjacency list, agency matrix).
+Unsupervised learning	graphs-searching		2	List common applications of graph models.
+Unsupervised learning	graphs-searching		3	List use cases for breadth-first and depth-first traversal.
+Unsupervised learning	graphs-searching		4	Write pseudo code for breadth-first and depth-first traversal.
+Unsupervised learning	graphs-communities		3	Explain the calculation and interpretation of degree, betweenness, and eigenvector centrality.
+Unsupervised learning	graphs-communities		3	Explain what graph communities are and how they are calculated.
+Unsupervised learning	graphs-searching		3	Use python packages to build graph data structure in Python and execute common algorithms (shortest path, connected components, …)
+Supervised-learning concepts	cross-validation		3	Define bias, variance and irreducible error.
+Supervised-learning concepts	cross-validation		2	Explain why we want a model with an optimal bias-variance tradeoff.
+Supervised-learning concepts	cross-validation		2	Define a test/train split and explain the importance of unseen data on evaluating a model
+Supervised-learning concepts	cross-validation		2	Describe the two uses of cross validation or hold-out validation. (model selection and model evaluation)
+Supervised-learning concepts	cross-validation		2	Implement k-fold cross validation.
+Supervised-learning concepts	cross-validation		1	Use sklearn to select hyperparameters using k-fold cross validation.
+Supervised-learning concepts	decision-rules		3	Explain issues that arise when building a model on datasets that have imbalanced classes.
+Supervised-learning concepts	decision-rules		4	Explain common approaches used to balance the classes (oversampling, undersampling, SMOTE).
+Supervised-learning concepts	decision-rules		2	Create a cost-benefit matrix from a description of the costs.
+Supervised-learning concepts	decision-rules		1	Generate a profit curve from a soft classifier and cost-benefit matrix, and choose the best threshold.
+Supervised-learning concepts	decision-rules		2	Interpret ROC curves and AUC to evaluate the performance of a model.
+Supervised-learning concepts	decision-rules		3	Generate an ROC curve.
+Supervised-learning concepts	decision-rules		4	Explain the probabilistic interpretation of ROC AUC.
+Neural networks	perceptrons		1	Define the basic parts of a neural network (perceptron, weights, activation, input/output/hidden layers)
+Neural networks	perceptrons		2	Build a feed-forward network in numpy using fixed weights and activations.
+Neural networks	perceptrons		1	List advantages and disadvantages of neural networks compared to other machine-learning models.
+Neural networks	perceptrons		3	Explain the types and importance of activation functions in neural networks.
+Neural networks	perceptrons		4	Explain how weights are updated using back-propogation and gradient descent.
+Neural networks	perceptrons		2	Use Keras to create a simple MLP for regression or classification.
+Neural networks	convolutional-neural-nets		2	Explain the advantage of a CNN relative to an MLP for image modelling.
+Neural networks	convolutional-neural-nets		3	Describe the function, shape, and arrangement of convolutional, pooling, and dense layers in a CNN.
+Neural networks	convolutional-neural-nets		3	Calculate the convolution of an image kernel and a grayscale image by hand.
+Neural networks	convolutional-neural-nets		2	List several use cases for CNNs.
+Neural networks	convolutional-neural-nets		3	Use keras to create and fine-tune a simple CNN.
+Neural networks	recurrent-neural-nets		3	Draw the basic structure of an RNN, both with cyclic connection and unrolled in time
+Neural networks	recurrent-neural-nets		3	Describe why a model's ability to maintain a state based is important in time series applications.
+Neural networks	recurrent-neural-nets		2	List several use cases for RNNs.
+Neural networks	recurrent-neural-nets		4	Explain what exploding and vanishing gradients are, and why they are shortcomings for basic RNNs.
+Neural networks	recurrent-neural-nets		4	Explain at a high level what an LSTM computational layer is, and how it solves the exploding/vanishing gradient problems.
+Neural networks	recurrent-neural-nets		3	Use Keras to execute and fine-tune an LSTM in Python.
+Neural networks	autoencoders		3	List several use cases of autoencoders.
+Neural networks	autoencoders		3	Explain how an autoencoder is trained.
+Neural networks	autoencoders		3	Explain what an encoded representation of the data is, and how an autoencoder's architecture achieves it.
+Neural networks	autoencoders		3	Implement an autoencoder in keras.
+Neural networks	transfer-learning		2	Define transfer learning.
+Neural networks	transfer-learning		3	Explain the differences between the feature extraction and fine-tuning approaches to transfer learning.
+Neural networks	transfer-learning		3	Fine-tune an existing architecture and weights of a CNN in keras.
+Neural networks	reinforcement-learning		2	Explain how reinforcement learning differs from supervised and unsupervised learning
+Neural networks	reinforcement-learning		3	Define agent, policy, environment, reward, and state in the context of reinforcement learning.
+Neural networks	reinforcement-learning		3	Define q-learning.
+Neural networks	reinforcement-learning		3	Investigate a simple reinforcement-learning problem with gym.
+Recommenders	content-based-recommenders		2	Calculate cosine, euclidean, and Jaccard similarity and explain why each might be used.
+Recommenders	content-based-recommenders		2	Explain the difference between implicit and explicit recommenders.
+Recommenders	content-based-recommenders		2	Explain the difference between and relative advantages of collaborative, content-based, and hybrid recommenders.
+Recommenders	content-based-recommenders		3	Explain how the loss function of a recommender might differ from other predictive models.
+Recommenders	content-based-recommenders		2	Suggest approaches to the cold-start problem.
+Recommenders	content-based-recommenders		2	List several examples of how recommenders are used.
+Recommenders	content-based-recommenders		3	Write pseudocode for a basic content-based recommender.
+Recommenders	similarity-based-recommenders		2	Discuss the differences between and relative advantages of item-item and user-user similarity recommenders.
+Recommenders	similarity-based-recommenders		2	Explain how similarity-based collaborative recommenders differ from content-based recommenders.
+Recommenders	similarity-based-recommenders		4	Explain how and why neighborhood are calculated for similarity recommenders.
+Recommenders	factorization-recommenders		3	Use NMF in python to make recommendations.
+Recommenders	factorization-recommenders		3	Explain how NMF allows inferring missing values.
+Recommenders	factorization-recommenders		3	Describe role of the number of topic in factorization recommenders, and predict which direction will increase bias, and which will increase variance.
+Special topics	nlp		2	List several ways in which NLP is used.
+Special topics	nlp		2	Describe a typical text processing pipeline and variations.
+Special topics	nlp		2	Define corpus, stop-words, stemming, lemmatization, tokens, n-grams, and bag-of-words.
+Special topics	nlp		3	Describe term frequency and TF-IDF in general terms and give one mathematical formula for each.
+Special topics	nlp		2	Featurize a text corpus in Python using NLTK and scikit-learn.
+Special topics	nlp		4	Explain how part-of-speech tagging is used in data science.
+Special topics	text-classification		2	Explain the difference between generative and discriminative models.
+Special topics	text-classification		3	Explain the models that generate text in Multinomial and Bernoulli Naive Bayes.
+Special topics	text-classification		2	Define Laplace smoothing and describe why it's used.
+Special topics	text-classification		2	Explain how Naive Bayes is naive.
+Special topics	text-classification		4	Use Gaussian Naive Bayes to include continuous features.
+Special topics	text-classification		2	Use sklearn to implement a Naive Bayes classification model on text.
+Special topics	image-processing		2	Describe how images are represented as a 2D or 3D array.
+Special topics	image-processing		2	Use numpy methods to manipulate images.
+Special topics	image-processing		3	Create features from images for machine learning.
+Special topics	image-processing		3	Manipulate images using the Pillow library.
+Special topics	latent-dirichlet-allocation		3	Explain how a corpus is created within the generative model in Latent Dirichlet Allocation.
+Special topics	latent-dirichlet-allocation		3	Describe the Dirichlet distribution, and how it is used in Latent Dirichlet Allocation.
+Special topics	latent-dirichlet-allocation		3	Interpret the matrices created with Latent Dirichlet Allocation.
+Special topics	latent-dirichlet-allocation		4	Compare and contrast LDA and NMF for topic modeling.
+Special topics	latent-dirichlet-allocation		4	Use LDA to create recommendations.
+Special topics	latent-dirichlet-allocation		3	Use sklearn to perform LDA topic modeling.
+Special topics	time-series		2	Describe the difference between a time-series random process and time-series data.
+Special topics	time-series		2	Explain the problem with cross-validating time-series models and how to do it correctly.
+Special topics	time-series		3	Define a time-series trend and list several ways the trend in a time series could be determined.
+Special topics	time-series		3	Define a time-series season and explain how seasonality of a time series can be determined.
+Special topics	time-series		3	Using python, perform trend-season-residual decomposition to make a time-series forecast.
+Special topics	time-series-arima		3	 Define a stationary time series.
+Special topics	time-series-arima		3	Use differencing to make a time series stationary.
+Special topics	time-series-arima		3	Use an Augmented Dicker Fuller test to test for stationarity, and explain the null hypothesis.
+Special topics	time-series-arima		4	Use a Box-Cox transformation to reduce heteroscedasticity.
+Special topics	time-series-arima		3	Explain the difference between an AR and a MA series.
+Special topics	time-series-arima		3	Explain the terms in an autocorrelation plot.
+Special topics	time-series-arima		3	Choose the order of an MA and AR model using an autocorrelation and partial autocorrelation plot.
+Special topics	time-series-arima		3	Use the Box-Jenkins method to choose the best ARIMA model.
+Special topics	time-series-arima		3	Forecast with an ARIMA model in statsmodels.
+Special topics	time-series-arima		4	Add seasonality and exogenous variables to forecast with a SARIMAX model in statsmodels.

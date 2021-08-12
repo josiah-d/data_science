@@ -1,0 +1,96 @@
+Say you're building a Decision Tree Classifier on this dataset.
+
+    | color | number | label |
+    | ----- | ------ | ----- |
+    | blue  | 1      | 0     |
+    | blue  | 2      | 1     |
+    | red   | 1      | 0     |
+    | red   | 5      | 1     |
+
+    Splitting on what feature and value has the best information gain? Use your
+    intuition rather than calculating all the entropy values.
+
+    The objective here is to accurately predict the labels, thus we wish to make
+    a split which produces more uniform predictions than we already had before 
+    we split the node.  Currently there are two 0's and two 1's, i.e., 50/50, in
+    the current node. Splitting on number for (<= 1) or (> 1) gives the best 
+    information gain because the resulting leaves are pure in terms of the labels.
+    Splitting on color (red versus blue) does not improve upon the 50/50 prediction
+    we previously had.
+    
+    
+You build a Decision Tree and get these stats:
+
+    train set accuracy:  90%
+    train set precision: 92%
+    train set recall:    87%
+
+    test set accuracy:   60%
+    test set precision:  65%
+    test set recall:     52%
+
+    What's going on? What would you do to modify the Decision Tree to fix the issue?
+
+    This decision tree is overfitting the data.  This is the case since it is 
+    unable to produce the same levels of accuracy in the test set.  Very low and
+    mathcing percentages in the training and test set (that could be demonstratably
+    synchronously improved upon) would indicate underfitting.  Pruning this tree
+    in place would reduce overfitting.  Or we might impose some restrictions on
+    tree depth and node sizes and attempt tree construction again.
+    
+
+Suppose instead you're building a Decision Tree Regressor. What is the 
+information gain of this split of the data?
+
+    Parent Node: 6, 5, 8, 8, 5, 4, 2, 4, 4
+    Left Child Node: 6, 5, 8, 8
+    Right Child Node: 5, 4, 2, 4, 4
+
+    When doing classification, gini or entropy are used to measure decreasing 
+    disorder and improved class prediction (i.e., information gain). However, 
+    these are not applicable measures in continuous valued prediction (i.e., 
+    regression) contexts and so prediction uncertainty reduction (i.e., information
+    gain) is instead measured on the basis of variance.  Specifically, information
+    gain in regression contexts is measured as the reduction in prediction variance
+    after splitting a node in a particular manner.  Pragmatically, when contructing
+    regression trees we can choose between alternative splitting options on the 
+    basis of the reduction in prediction variance (i.e., information gain).  
+    E.g., the informaiton gain for the above split is given below we would prefer
+    this split over another if this gain is higher than for the other.
+
+    Var(Parent) = Var(6,5,8,8,5,4,2,4,4) = 3.4321
+    Var(Left Child) = Var(6,5,8,8) = 1.6875
+    Var(Right Child) = Var(5,4,2,4,4) = 0.9600
+
+    Gain = Var(S) - 4/9 * Var(A) - 5/9 * Var(B)
+         = 2.1488
+         
+
+How are Random Forests different from standard Decision Trees?
+
+    (a) Random forests are built from an ensemble of decisions trees on the basis
+    of bootstrapped samples as opposed to standard (single) decision tree construction
+    which is based on the original sample. (b) Also unlike a standard decision 
+    tree, each split in each tree of a random forest is made on the basis of a 
+    randomly restricted set of features -- not all features may be used to create
+    a given split as is the case in a standard decision tree.  This random splitting
+    produces tree stuctures across the entire ensemble of trees that are somewhat
+    decorrelated, which in conjuction with averaging across a large number of 
+    trees reduces the variance of the random forest ensemble.  (c) Because of 
+    the power of this model variance reduction technique, unlike a standard decision
+    tree, random forest ensembles tend to use trees which are "tall and bushy" 
+    (i.e., they only impose minimal restrictions on tree depth and node splitting)
+    and individually are very prone to overfitting.
+    
+
+In boosting, what is the relationship between the hyperparameters 
+`learning_rate` and `n_estimators`?
+
+    It's an inverse relationship.
+    A decreased learning rate in boosting means each estimator has a decreased 
+    impact on prediction.  The prediction improves (i.e.,  reduces its bias) 
+    with each estimator, and so with a very slow learning rate it is likely that
+    more estimators will be required to achieve a given level of prediction 
+    accuracy (i.e., a sufficient flexibility in the model to allow for a given 
+    level of prediction accuracy).  Thus as `learning_rate` is made smaller 
+    `n_estimators` will likely need to be made larger.

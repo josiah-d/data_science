@@ -1,0 +1,65 @@
+<head>
+    <title>Flower Classifier</title>
+    <script src="{{ url_for('static', filename='brython.js')}}"></script>
+    <script src="{{ url_for('static', filename='brython_stdlib.js')}}"></script>
+  
+</head>
+<body onload="brython()">
+    Enter the flower dimensions in cm:<br/>
+    <input type="text" id="sepal_length"> sepal length</input><br/>
+    <input type="text" id="sepal_width"> sepal width</input><br/>
+    <input type="text" id="petal_length"> petal length</input><br/>
+    <input type="text" id="petal_width"> petal width</input><br/>
+
+    <button type="button" id="predict">Predict flower</button>
+
+    Predicted probabilities:
+    <table>
+        <tr><th>species</th><th>probability</th></tr>
+        <tr><td>iris setosa</td><td><span id="setosa"></span></td></tr>
+        <tr><td>iris versicolor</td><td><span id="versicolor"></span></td></tr>
+        <tr><td>iris virginica</td><td><span id="virginica"></span></td></tr>
+    </table>
+    
+    <script type="text/python">
+        from browser import document, ajax
+        import json
+
+
+        def get_features():
+            sepal_length = document['sepal_length'].value
+            sepal_width = document['sepal_width'].value
+            petal_length = document['petal_length'].value
+            petal_width = document['petal_width'].value
+
+            return {'sepal_length': float(sepal_length),
+                    'sepal_width': float(sepal_width),
+                    'petal_length': float(petal_length),
+                    'petal_width': float(petal_width)} 
+
+        def send_features_json(features):
+            req = ajax.Ajax()
+            req.bind('complete', display_prediction)
+            req.open('POST',
+                     '/predict',
+                     True)
+            req.set_header('Content-Type', 'application/json')
+            req.send(json.dumps(features))
+    
+
+        def display_prediction(req):
+            result = json.loads(req.text)
+            # note the syntax for setting the child text of an element
+            document['setosa'].html = result['setosa']
+            document['versicolor'].html = result['versicolor']
+            document['virginica'].html = result['virginica']
+        
+        def click(event):
+            features = get_features()
+            send_features_json(features)
+        
+        document['predict'].bind('click', click)
+        
+        </script>
+        
+</body>

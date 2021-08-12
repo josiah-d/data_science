@@ -1,0 +1,57 @@
+The bias of a coin is 0.6. What is the probability of flipping 8 or 
+more heads in 10 flips?
+
+    ``` python 
+    import scipy.stats as scs
+
+    rv = scs.binom(10, 0.6)
+
+    rv.pmf(8) + rv.pmf(9) + rv.pmf(10)
+
+    0.1672897536 
+    ```
+
+
+What is P(x=T | y=b)?
+
+  Since y=b, we need the relative probability that x=T within column 
+  "b", i.e., 
+  
+  (0.1) / (0.1 + 0.15) = 0.4
+  
+You have a continuous uniform distribution between 0 and 4. 
+Calculate P(1 < x < 2 ∪ 3.5 < x < 4).
+
+P(1 < x < 2) = 1/4*(2-1)
+P(3.5 < x < 4) = 1/4(4-3.5)
+0.25 + 0.125 = 0.375
+
+Difference between PDF and PMF?
+Is the data continuous or discrete?   
+If the data is discrete, you have a PMF.   
+If the data is continuous, you have a PDF.
+
+You’re flipping an unfair coin 5 times and seeing how many times it comes up heads in those 5 flips.
+distribution.pmf(2) = 0.3394
+distribution.pdf(3): AttributeError
+distribution.cdf(5) = 1.0
+
+Which distribution is most appropriate to use to represent the scenario? 
+
+The side that faces up when you roll a fair, 20 sided die: Uniform, Discrete
+In a fair die, each side is equally likely to face up. This is a uniform distribution. It is discrete because we can only have integer values (1,2,3, etc.).
+
+Whether or not a fair, 20 sided die will roll a 15 or greater: Bernoulli
+The Bernoulli distribution is used to describe a single trial that can have two outcomes: success or failure.
+
+You roll five of the 20 sided dice and want to know how many will roll a 15 or greater: Binomial
+The binomial distribution is used to predict the outcome of several Bernoulli (success/fail) trials.
+
+Busses arrive at a rate of 12 per hour. What is the probability 15 or more busses will arrive in the next hour? Poisson
+The Poisson distribution is used to predict number of events that occur.
+
+Busses arrive at a rate of 12 per hour. How long do you expect to wait until the next bus arrives? Exponential
+The exponential distribution is used to predict the wait time until the very first event. 
+(Compare to the gamma distribution, which is used to predict the wait time until the k-th event).
+
+

@@ -1,0 +1,90 @@
+# This lists the instructors teaching each repo.
+# Lines starting with # are comments; blank lines are ignored.
+# Order isn't important here; the organization is only needed
+# for maintainability.
+# Multiple (comma-separated) instructors can be used for a repo.
+# All instructors for a day are concatenated and dedupped.
+
+#Week 1: Programming for Data Science,
+unix, XXX
+git-intro, XXX
+python-intro, XXX
+oop, XXX
+numpy, XXX
+linear-algebra, XXX
+pandas, XXX
+matplotlib, XXX
+pandas-eda-case-study, XXX
+
+#Week 2: Statistics,
+probability-distributions, XXX
+binomial-tests, XXX
+sampling-distributions, XXX
+central-limit-theorem, XXX
+maximum-likelihood, XXX
+hypothesis-testing, XXX
+statistical-power, XXX
+docker, XXX
+bayes-intro, XXX
+bayes-testing, XXX
+
+#Week 3: Big Data,
+sql-intro, XXX
+sql-advanced, XXX
+web-scraping, XXX
+mongo-db, XXX
+aws, XXX
+spark-dfs, XXX
+spark-case-study, XXX
+,
+#Week 5: Supervised Learning and Regression,
+knn, XXX
+cross-validation, XXX
+predictive-linear-regression, XXX
+inferential-regression, XXX
+algorithmic-complexity, XXX
+regularized-regression, XXX
+logistic-regression, XXX
+decision-rules, XXX
+regression-case-study, XXX
+
+#Week 6: Nonlinear Supervised Learning,
+gradient-descent, XXX
+perceptrons, XXX
+time-series, XXX
+decision-trees, XXX
+random-forests-implementation, XXX
+random-forests-application, XXX
+boosting-implementation, XXX
+gradient-boosted-regression, XXX
+supervised-learning-case-study, XXX
+
+#Week 7: NLP and Unsupervised Learning,
+image-processing, XXX
+convolutional-neural-nets, XXX
+nlp, XXX
+text-classification, XXX
+clustering, XXX
+pca, XXX
+svd, XXX
+topic-modeling, XXX
+nlp-case-study, XXX
+
+#Week 9: Advanced Topics 1,
+flask, XXX
+mcmc, XXX
+graphs-searching, XXX
+latent-dirichlet-allocation, XXX
+content-based-recommenders, XXX
+similarity-based-recommenders, XXX
+factorization-recommenders, XXX
+recommender-case-study, XXX
+
+#Week 10: Advanced Topics 2,
+time-series-arima, XXX
+recurrent-neural-nets, XXX
+autoencoders, XXX
+transfer-learning, XXX
+multi-armed-bandit, XXX
+reinforcement-learning, XXX
+fraud-detection-case-study, XXX

@@ -1,0 +1,66 @@
+<head>
+    <title>Flower Classifier</title>
+    <script type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}">  </script>
+
+</head>
+<body>
+    Enter the flower dimensions in cm:<br/>
+    <input type="text" id="sepal_length"> sepal length</input><br/>
+    <input type="text" id="sepal_width"> sepal width</input><br/>
+    <input type="text" id="petal_length"> petal length</input><br/>
+    <input type="text" id="petal_width"> petal width</input><br/>
+
+    <button type="button" id="predict">Predict flower</button>
+
+    Predicted probabilities:
+    <table>
+        <tr><th>species</th><th>probability</th></tr>
+        <tr><td>iris setosa</td><td><span id="setosa"></span></td></tr>
+        <tr><td>iris versicolor</td><td><span id="versicolor"></span></td></tr>
+        <tr><td>iris virginica</td><td><span id="virginica"></span></td></tr>
+    </table>
+    
+    <script type="text/javascript">
+
+        let get_features = function() {
+            let sepal_length = $("input#sepal_length").val()
+            let sepal_width = $("input#sepal_width").val()
+            let petal_length = $("input#petal_length").val()
+            let petal_width = $("input#petal_width").val()
+            
+            return {'sepal_length': parseFloat(sepal_length),
+                    'sepal_width': parseFloat(sepal_width),
+                    'petal_length': parseFloat(petal_length),
+                    'petal_width': parseFloat(petal_width)} 
+        };
+        
+        let send_features_json = function(features) {
+            $.ajax({
+                url: '/predict',
+                contentType: "application/json; charset=utf-8",
+                type: 'POST',
+                success: function (data) {
+                    display_prediction(data);
+                },
+                data: JSON.stringify(features)
+            });
+        };
+        
+        let display_prediction = function(prediction) {
+            $("span#setosa").html(prediction.setosa)
+            $("span#versicolor").html(prediction.versicolor)
+            $("span#virginica").html(prediction.virginica)
+        };
+        
+        $(document).ready(function() {
+        
+            $("button#predict").click(function() {
+                let features = get_features();
+                send_features_json(features);
+            })
+        
+        })
+        
+        </script>
+        
+</body>

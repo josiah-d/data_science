@@ -1,0 +1,14 @@
+circle1,circle,100,100,50,255,0,0
+circle2,circle,150,100,50,0,0,255
+circle3,circle,300,100,50,255,0,0
+circle4,circle,350,100,50,0,0,255
+circle5,circle,100,300,50,255,0,0
+circle6,circle,150,300,50,0,0,255
+circle7,circle,300,300,50,255,0,0
+circle8,circle,350,300,50,0,0,255
+union1,union,circle1,circle2
+inter2,intersection,circle3,circle4
+diff1,difference,circle5,circle6
+diff2,difference,circle7,circle8
+diff3,difference,circle8,circle7
+eye,union,diff2,diff3

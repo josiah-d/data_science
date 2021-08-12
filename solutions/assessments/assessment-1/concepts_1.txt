@@ -1,0 +1,41 @@
+Python Data Types
+
+    a) Please give an example of a mutable and immutable datatype. 
+    (2 pts)
+
+    Mutable: lists.
+    Immutable: tuples.
+
+    b) What would be displayed when 'b' is printed in the code below. 
+    (1 pt)
+
+    In[1] a = [1, 'a', [2, 3], 4.5]
+
+    In[2] b = a
+
+    In[3] a[0] = -0.1
+
+    In[4] print(b)
+    Out [4] [-0.1, 'a', [2, 3], 4.5]
+
+
+Git
+
+    a)  What is git, and why do software developers use it? (1 pt)
+
+    Git is a version control software. Developers use it to keep track 
+    of changes in their code, work simultaneously with others on large 
+    projects, and test changes in code on branches before implementing 
+    (merging) them with their main branch, often called 'master.'
+
+    b) What is the 'staging area', or 'index' in git? (1 pt)
+
+    The staging area lets developers add the changes they've made to 
+    code before fully 'committing' the code, or adding it to the 
+    tracked changes in git.
+
+    c) What does the command 'git commit' do? (1 pt)
+
+    "git commit -m 'your commit message'" will add the files in your 
+    staging area or index to your tracked changes. It records changes 
+    to the repository.

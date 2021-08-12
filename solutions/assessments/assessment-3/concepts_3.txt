@@ -1,0 +1,177 @@
+Your employer sells disposable razors online. After analyzing a survey, 
+the marketing team proposes giving a coupon for a free case of razors 
+to every household that purchased razors from a competitor. Because 
+customers must redeem coupons and make purchases using a registered 
+account, your company will be able to determine if coupon recipients 
+subsequently buy a case of razors. These customers will be considered 
+'converted' for the purposes of business analyses.
+
+Your business development team within the company has identified three 
+types of customers: Loyal, Fickle, and Indifferent. The CEO wants to 
+build a stable revenue stream and prioritizes converting Loyal 
+customers. The CEO asks you to analyze the marketing team's proposed 
+campaign.
+
+- Your team determined that there are twice as many Loyal customers as 
+Fickle customers, and that there are as many Indifferent customers as 
+Fickle customers.
+- There is a 5% chance that a Loyal customer will be converted by 
+receiving a coupon.
+- There is a 50% chance that a Fickle customer will be converted by 
+receiving a coupon.
+- There is only a 20% chance that an Indifferent customer will be 
+converted by a coupon.
+
+What's the probability that a converted customer is Loyal?
+
+    `F = {Fickle}, I = {Indifferent}, L = {Loyal}`
+
+    Calculate their probabilities.
+
+    `P(F) = P(I), P(L) = 2 * P(F), P(F) + P(I) + P(L) = 1`
+
+    `implies P(F) = P(I) = 0.25, P(L) = 0.50`
+
+    `C = {Converted}`
+
+    Find probability of converting a customer
+
+    `P(C|F) = 0.50, P(C|I) = 0.20, P(C|L) = 0.05.`
+
+    `P(C) = P(C|F) * P(F) + P(C|I) * P(I) + P(C|L) * P(L)`
+
+        = 0.50 * 0.25 + 0.20 * 0.25 + 0.05 * 0.50
+        
+        = 0.20
+
+    Use Bayes' theorem
+
+    `P(L|C) = P(C|L) * P(L) / P(C) `
+            `= (0.05 * .50) / 0.20 = 0.125`
+            
+
+Mongo
+
+    a) In terms of organization of the data in the database, how are 
+    Mongo and SQL different? (2 pts)
+
+    SQL is relational, so it has a defined schema. The schema makes 
+    sure that all the data in a column in a table has the same type - 
+    all the dates are dates, all the numbers are either floats or ints, 
+    etc. 
+
+    Mongo is *not* relational, it's a NoSQL database where the 
+    structure of the data is defined for each document, but not for the 
+    table.
+
+
+    b) Give an example of data that is likely better handled by Mongo 
+    than SQL. (1 pt)
+
+    Data whose structure changes rapidly is better handled in Mongo 
+    than SQL. Web pages change frequently, so data obtained from 
+    web-scraping is likely better handled by Mongo.
+
+
+What is Lazy Evaluation in Spark and why does it occur?
+
+    Lazy evaluation means that the execution will not begin until the 
+    action is triggered. For Spark RDDs, there are two types of 
+    operations: 1. Transformations and 2. Actions. In terms of Spark, 
+    transformations do not occur until absolutely necessary (i.e, when 
+    an action is called). Spark constructs a sequence of 
+    transformations into a Directed Acyclic Graph (DAG). Once 
+    completed, it is sent for execution to the cluster manager. Lazy 
+    evaluation allows Spark to make optimization decisions with the 
+    entire completed DAG. If each transformation was executed on 
+    command, this would not be possible.
+
+
+What is a UDF in Spark? What is required to make a UDF work properly?
+
+    UDF stands for "user defined function". They are custom functions 
+    written by the user. In order for Spark to properly
+    handle UDFs, the user must specify the return type of the function.
+
+
+What is Big Data?
+
+    - Data so large that it cannot be stored on one machine.
+
+Predict website traffic woth 95% confidence based on sample
+
+    You could use the central limit theorem to determine the confidence 
+    interval around the mean.  It would require using the sample's 
+    mean, variance, and the number of samples drawn to calculate the 
+    standard error of them mean, and that combined with the desired 
+    significance level would allow you to calculate the confidence 
+    interval.
+
+    Alternatively, you could use bootstrapping to create a confidence 
+    interval.  Here you'd draw with replacement from the sample 
+    creating many bootstrapped versions of the sample set.  For each 
+    bootstrapped sample, calculate the mean.  Use the distribution of 
+    the bootstrapped means to calculate the confidence interval (rank 
+    from from low to high, throw out the bottom 2.5% and top 2.5%).
+    
+    Alternatively, you could use Bayesian methods to create a credible 
+    interval. The posterior distribution of the data is proportional to 
+    the likelihood of the data times the prior distribution of the 
+    likelihood parameter(s). Here you might choose a Poisson 
+    distribution for the likelihood and a gamma for the prior 
+    distribution of the Poisson rate parameter, lambda. The resulting 
+    posterior distribution can be used to form a probability interval 
+    for the mean number of log-ins.
+
+### Not used in Feb 2021 cohort ####
+
+In Big O notation, what is the algorithmic complexity for the following 
+functions (1pt each):
+
+    a)
+    def f(n):
+        i = 0
+        while i < n:
+            j = 0
+            while j < n:
+                print(str(i) + ", " + str(j))
+                j += 1
+            i += 1
+
+    O(n) = n^2
+
+    b)
+    def f(n):
+        i = 1
+        while i < n:
+            i *= 2
+            print(i)
+
+    O(n) = log(n)
+
+    To prove this, you can plot the number of loops it takes relative 
+    to the size of n...
+    import matplotlib.pylab as plt
+        def f(n):
+            times = 0
+            i = 1
+            while i < n:
+                times += 1
+                i *= 2
+            return times
+        li = []
+        for i in range(1000):
+            li.append(f(i))
+        plt.plot(range(1000), li)
+        plt.plot(np.array(range(1000)), np.sqrt(np.array(range(1000))))
+        plt.plot(np.array(range(1000)), np.log2(np.array(range(1000))))
+        plt.legend(['true values', 'sqrt', 'log'], loc='upper left')
+        plt.show()
+
+    c)
+    def do_something_else(n):
+        print("My name is Inigo Montoya")
+    O(n) = 1
+
+#######
+

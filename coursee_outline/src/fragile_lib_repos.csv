@@ -1,0 +1,21 @@
+# This file contains a list of repos that fast-evolving libraries are used.
+# Periodic examination is recommended to ensure the runnability and correctness of these materials.
+# It is recommended to upgrade the syntax and format of those materials to the latest as well.
+# The names of the repos follow the convention as the first column of descriptions.csv.
+# Some packages changed historically but it is unlikely that they are going to change significantly again. 
+# These packages are not included. 
+# One example is scikit-learn whose APIs changed fairly quickly in the past but not now.
+# requirements.txt is required for these repos.  
+
+
+repositoary_name, involved_packages, chance_of_change, notes    
+perceptrons, tensorflow, low, functional syntax is prefered in general though
+time-series, statsmodels, low, there was hiden changes of API parameters
+convolutional-neural-nets, tensorflow, medium, big changes of dataset module from 1.x to 2.x
+nlp, nltk and scikit-learn, low, None
+graphs-searching, networkx, low, None
+time-series-arima, statismodels, medium, big API changes in the past
+recurrent-neural-nets, tensorflow, medium, None 
+autoencoders, tensorflow, medium, tensorboard needs special attention
+transfer-learning, tensorflow and keras, medium, the keras APIs needs update to tf.keras
+reinforcement-learning, tensorflow and keras-rl2, high, currently this repo relies on a historical version of keras-rl2. Implementation from scratch is needed in the long run.

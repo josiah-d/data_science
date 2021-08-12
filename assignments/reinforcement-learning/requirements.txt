@@ -1,0 +1,5 @@
+tensorboard==2.1.1
+tensorboard-plugin-wit==1.7.0
+tensorflow==2.1.0
+tensorflow-estimator==2.1.0
+keras-rl2==1.0.4

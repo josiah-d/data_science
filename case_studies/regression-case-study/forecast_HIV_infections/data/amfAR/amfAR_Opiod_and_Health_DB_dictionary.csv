@@ -1,0 +1,423 @@
+amfAR Opioid and Health Indicator Database – Downloadable Dataset Dictionary,
+,
+"This data dictionary details all of the indicators available for download from the amfAR Opioid and Health Indicator Database. Please note that several indicators are updated on a weekly basis, and a change log does not currently exist. Indicators that update are identified in the technical notes below the indicator. The full, interactive database may be found at opioid.amfar.org. Please direct all questions regarding this database to dbinfo@amfar.org.",
+,
+Indicator Name,"Age-adjusted Drug Poisoning Deaths per 100,000 (Modeled)"
+Name in Downloads,drugdeathrate_est
+Short Description,"Age-adjusted drug poisoning deaths per 100,000 (modeled)"
+Available Geography,County
+Available Years,"1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015"
+Source,Centers for Disease Control's National Center for Health Statistics Data Visualization Gallery.
+Source Link,https://www.cdc.gov/nchs/data-visualization/drug-poisoning-mortality/
+Description,"Estimated rate of death from drug poisoning, including both illicit and prescription drugs, per 100,000 U.S. standard population for 2000. Only available at county level. For state data, see drug deaths per 100,000. Estimates come from the Centers for Disease Control and Prevention (CDC) National Center for Health Statistics (NCHS) Data Visualization Gallery. The data are binned below 30 deaths per 100,000 in bins of size 2, and counties with estimated rates over 30 are coded as "">30"". It should be noted that these data are estimates, and are drawn from a model designed to generate stable estimates of death rates where data are sparse due to small population size. <strong>Specific county values should be interpreted with caution, and the actual measure of drug deaths per 100,000 should be preferred where available</strong>. More information on the estimation procedure available at the link below."
+Technical Notes,"The data are binned, and for ease of presentation were coded as the lower end of the range. Values should be interpreted as a range from the reported value to the next multiple of two. For example, 6.1 should be interpreted as the range '6.1-8'. A value of 30 should be interpreted as '30+'."
+,
+Indicator Name,CURES Grant Funding
+Name in Downloads,CURES_funds
+Short Description,Grant funding allocated to respond to the opioid crisis through the 21st Century Cures Act
+Available Geography,State
+Available Years,2017
+Source,Department of Health and Human Services.
+Source Link,https://www.hhs.gov/about/news/2017/04/19/trump-administration-awards-grants-states-combat-opioid-crisis.htm
+Description,Funding from the 21st Century Cures Act is provided through the State Targeted Response to the Opioid Crisis Grants administered by the Substance Abuse and Mental Health Services Administration (SAMHSA). These grants will help address the opioid crisis by providing support to states to supplement opioid abuse prevention and treatment activities.
+Technical Notes,N/A
+,
+Indicator Name,Division of HIV/AIDS Prevention Funding
+Name in Downloads,DHAP_funds
+Short Description,Funding from the CDC Division of HIV/AIDS Prevention
+Available Geography,State
+Available Years,2016
+Source,Centers for Disease Control and Prevention
+Source Link,https://www.cdc.gov/nchhstp/stateprofiles/default.htm
+Description,"The Centers for Disease Control and Prevention (CDC) provides leadership in improving public health by working with community, state, national, and international partners in surveillance, research, and prevention and evaluation activities. The Division of HIV/AIDS Prevention (DHAP) is responsible for HIV control activities."
+Technical Notes,N/A
+,
+Indicator Name,Division of Viral Hepatitis Funding
+Name in Downloads,DVH_funds
+Short Description,Funding from the CDC Division of Viral Hepatitis
+Available Geography,State
+Available Years,2016
+Source,Centers for Disease Control and Prevention
+Source Link,https://www.cdc.gov/nchhstp/stateprofiles/default.htm
+Description,"The Centers for Disease Control and Prevention (CDC) provides leadership in improving public health by working with community, state, national, and international partners in surveillance, research, and prevention and evaluation activities. The Division of Viral Hepatitis (DVH) is responsible for viral hepatitis control activities."
+Technical Notes,N/A
+,
+Indicator Name,Drug-related Deaths
+Name in Downloads,drugdeaths
+Short Description,"The total number of deaths from drug poisoning, including both illicit and prescription drugs."
+Available Geography,"State, District, County"
+Available Years,"2010, 2011, 2012, 2013, 2014, 2015, 2016"
+Source,Centers for Disease Control and Prevention
+Source Link,https://wonder.cdc.gov
+Description,"The total number of deaths from drug poisoning, including both illicit and prescription drugs. Drug poisoning data are from CDC's Detailed Cause of Death data and includes ICD-10 codes X40-X44, X60-X64, X85, and Y10-Y14. This includes both opioid and non-opioid drug poisonings, since the <a href='https://www.cdc.gov/mmwr/volumes/65/wr/pdfs/mm655051e1.pdf' target=_blank>CDC reports</a> that due to variable levels of completeness on death certificates only 28 states have high enough quality of data to report drug-specific poisoning data.  Data not available for Puerto Rico. All sub-national data representing zero to nine (0-9) deaths are suppressed. Corresponding sub-national denominator population figures are also suppressed when the population represents fewer than 10 persons. State-level estimates include suppressed values; as such, county and district estimates may not sum to state value."
+Technical Notes,N/A
+,
+Indicator Name,"Drug-related Deaths per 100,000"
+Name in Downloads,drugdeathrate
+Short Description,"The rate of death from drug poisoning, including both illicit and prescription drugs, per 100,000 population."
+Available Geography,"State, District, County"
+Available Years,"2010, 2011, 2012, 2013, 2014, 2015, 2016"
+Source,Centers for Disease Control and Prevention
+Source Link,https://wonder.cdc.gov
+Description,"The rate of death from drug poisoning, including both illicit and prescription drugs, per 100,000 population. Drug poisoning data are from CDC's Detailed Cause of Death data and includes ICD-10 codes X40-X44, X60-X64, X85, and Y10-Y14. This includes both opioid and non-opioid drug poisonings, since the <a href='https://www.cdc.gov/mmwr/volumes/65/wr/pdfs/mm655051e1.pdf' target=_blank>CDC reports</a> that due to variable levels of completeness on death certificates only 28 states have high enough quality of data to report drug-specific poisoning data.  These values are not age-adjusted. Data not available for Puerto Rico. All sub-national data representing zero to nine (0-9) deaths are suppressed. Corresponding sub-national denominator population figures are also suppressed when the population represents fewer than 10 persons. State-level estimates include suppressed values; as such, county and district estimates may not sum to state value."
+Technical Notes,N/A
+,
+Indicator Name,"Estimated Acute Hepatitis C Cases per 100,000"
+Name in Downloads,HCVacuterate
+Short Description,"Estimated number of acute (newly diagnosed) cases of hepatitis C in one year, per 100,000 population"
+Available Geography,State
+Available Years,"2010, 2011, 2012, 2013, 2014, 2015"
+Source,Centers for Disease Control and Prevention
+Source Link,https://www.cdc.gov/hepatitis/statistics/
+Description,"Estimated number of acute (newly diagnosed) cases of hepatitis C in one year, per 100,000 population, calculated from CDC reported cases. CDC estimates the actual number of acute cases to be 13.9 times the number of reported cases. This estimate does not capture the total number of people living with both acute and chronic hepatitis C, and therefore underrepresents the actual number of cases. <a href='https://www.cdc.gov/hepatitis/hcv/hcvfaq.htm' target=_blank>According to the CDC,</a> acute hepatitis C leads to chronic infection in 75-85% of cases. Hepatitis C has been a nationally notifiable diseases since 1994, yet not all states report usable data and no HCV data are available at the county level, undermining the ability to surveil the epidemic and identify potential outbreaks."
+Technical Notes,N/A
+,
+Indicator Name,Estimated Cases of Acute Hepatitis C
+Name in Downloads,HCVacute
+Short Description,Estimated number of acute (newly diagnosed) cases of hepatitis C in one year
+Available Geography,State
+Available Years,"2010, 2011, 2012, 2013, 2014, 2015"
+Source,Centers for Disease Control and Prevention
+Source Link,https://www.cdc.gov/hepatitis/statistics/
+Description,"Estimated number of acute (newly diagnosed) cases of hepatitis C in one year, calculated from CDC reported cases. CDC estimates the actual number of acute cases to be 13.9 times the number of reported cases. This estimate does not capture the total number of people living with both acute and chronic hepatitis C, and therefore underrepresents the actual number of cases. <a href='https://www.cdc.gov/hepatitis/hcv/hcvfaq.htm' target=_blank>According to the CDC,</a> acute hepatitis C leads to chronic infection in 75-85% of cases. Hepatitis C has been a nationally notifiable diseases since 1994, yet not all states report usable data and no HCV data are available at the county level, undermining the ability to surveil the epidemic and identify potential outbreaks."
+Technical Notes,N/A
+,
+Indicator Name,Facilities Providing All Medication Assisted Treatments
+Name in Downloads,AMAT_fac
+Short Description,"Number of substance abuse treatment facilities offering all three MAT services (Buprenorphine, Methadone, Naltrexone)"
+Available Geography,"State, District, County"
+Available Years,"2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017"
+Source,Substance Abuse and Mental Health Services Administration.
+Source Link,https://www.samhsa.gov/data/substance-abuse-facilities-data-nssats
+Description,"Number of substance abuse treatment facilities offering all three MAT services (Buprenorphine, Methadone, Naltrexone). Data are from The National Survey of Substance Abuse Treatment Facilities (N-SSATS) - an annual survey of U.S. facilities offering treatment services for alcohol and drug abuse. To qualify as providing all three MAT services, facilities must have declared that methadone, buprenorphine, and naltrexone are included in their programs. These include facilities coded with: At least one of: BM (Buprenorphin maintenance), BMW (Buprenorphine maintenance for a pre-determined time), BU (Buprenorphine used in treatment), BUM (Buprenorphine maintenance (<2016)), DB (Buprenorphine detoxification); At least one of: DM (Methadone detoxification), METH (Methadone), MM (Methadone maintenance), MMW (Methandone maintenance for pre-determined time); and at least one of: NXN (Naltrexone (oral)), VTRL (Extended-release, injectable naltrexone). Of note, N-SSATS facilities can also be coded as UBN (Prescribes/administers buprenorphine and/or naltrexone). Some facilities do report as UBN but do not individually report offering either buprenorphine or naltrexone. These facilities are included in substance abuse facilities offering any MAT, but are excluded here."
+Technical Notes,N/A
+,
+Indicator Name,Facilities Providing All Medication Assisted Treatments and Accepting Medicaid
+Name in Downloads,Med_AMAT_fac
+Short Description,"Number of substance abuse treatment facilities offering all three MAT services (Buprenorphine, Methadone, Naltrexone) and accept Medicaid"
+Available Geography,"State, District, County"
+Available Years,"2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017"
+Source,Substance Abuse and Mental Health Services Administration.
+Source Link,https://www.samhsa.gov/data/substance-abuse-facilities-data-nssats
+Description,"Number of substance abuse treatment facilities offering all three MAT services (Buprenorphine, Methadone, Naltrexone) and accept Medicaid. Data are from The National Survey of Substance Abuse Treatment Facilities (N-SSATS) - an annual survey of U.S. facilities offering treatment services for alcohol and drug abuse. To qualify as providing all three MAT services, facilities must have declared that methadone, buprenorphine, and naltrexone are included in their programs. These include facilities coded with: At least one of: BM (Buprenorphin maintenance), BMW (Buprenorphine maintenance for a pre-determined time), BU (Buprenorphine used in treatment), BUM (Buprenorphine maintenance (<2016)), DB (Buprenorphine detoxification); At least one of: DM (Methadone detoxification), METH (Methadone), MM (Methadone maintenance), MMW (Methandone maintenance for pre-determined time); and at least one of: NXN (Naltrexone (oral)), VTRL (Extended-release, injectable naltrexone). Of note, N-SSATS facilities can also be coded as UBN (Prescribes/administers buprenorphine and/or naltrexone). Some facilities do report as UBN but do not individually report offering either buprenorphine or naltrexone. These facilities are included in substance abuse facilities offering any MAT, but are excluded here. Medicaid accepting facilities are identified from key code MD (Medicaid) in the N-SSATS data."
+Technical Notes,N/A
+,
+Indicator Name,Facilities Providing Mental Health Services
+Name in Downloads,MH_fac
+Short Description,Number of facilities that provide mental health services
+Available Geography,"State, District, County"
+Available Years,"2015, 2016, 2017"
+Source,Substance Abuse and Mental Health Services Administration.
+Source Link,https://www.samhsa.gov/data/mental-health-facilities-data-nmhss/reports
+Description,"Number of facilities that provide mental health services. Data from The National Mental Health Services Survey (N-MHSS) - an annual survey of U.S. facilities offering mental health services facilities. Types of care include crisis intervention teams, psychiatric emergency walk-in services, or mental health treatment. Facilities include hospital inpatient, outpatient, residential, or partial hospitalization/day treatment."
+Technical Notes,N/A
+,
+Indicator Name,Facilities Providing Mental Health Services and Accepting Medicaid
+Name in Downloads,Med_MH_fac
+Short Description,Number of facilities that provide mental health services and accept Medicaid
+Available Geography,"State, District, County"
+Available Years,"2015, 2016, 2017"
+Source,Substance Abuse and Mental Health Services Administration.
+Source Link,https://www.samhsa.gov/data/mental-health-facilities-data-nmhss/reports
+Description,"Number of facilities that provide mental health services. Data from The National Mental Health Services Survey (N-MHSS) - an annual survey of U.S. facilities offering mental health services facilities. Types of care include crisis intervention teams, psychiatric emergency walk-in services, or mental health treatment. Facilities include hospital inpatient, outpatient, residential, or partial hospitalization/day treatment. Medicaid accepting facilities are identified from key code MD (Medicaid) in the N-MHSS data."
+Technical Notes,N/A
+,
+Indicator Name,Facilities Providing Some Medication Assisted Treatment
+Name in Downloads,SMAT_fac
+Short Description,Number of substance abuse treatment facilities offering any MAT
+Available Geography,"State, District, County"
+Available Years,"2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017"
+Source,Substance Abuse and Mental Health Services Administration.
+Source Link,https://www.samhsa.gov/data/substance-abuse-facilities-data-nssats
+Description,"Number of substance abuse treatment facilities offering any form of medication assisted treatment (MAT). Data are from The National Survey of Substance Abuse Treatment Facilities (N-SSATS) - an annual survey of U.S. facilities offering treatment services for alcohol and drug abuse. Treatment programs that offers at least one medication used in the treatment of substance abuse disorders (methadone, buprenorphine, or naltrexone) are included. These include facilities coded with any of the following: BM (Buprenorphin maintenance), BMW (Buprenorphine maintenance for a pre-determined time), BU (Buprenorphine used in treatment), BUM (Buprenorphine maintenance (<2016)), DB (Buprenorphine detoxification), DM (Methadone detoxification), METH (Methadone), MM (Methadone maintenance), MMW (Methandone maintenance for pre-determined time), NXN (Naltrexone (oral)), UBN (Prescribes/administers buprenorphine and/or naltrexone), VTRL (Extended-release, injectable naltrexone)."
+Technical Notes,N/A
+,
+Indicator Name,Facilities Providing Some Medication Assisted Treatment and Accepting Medicaid
+Name in Downloads,Med_SMAT_fac
+Short Description,Number of substance abuse treatment facilities offering any MAT that accept Medicaid
+Available Geography,"State, District, County"
+Available Years,"2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017"
+Source,Substance Abuse and Mental Health Services Administration.
+Source Link,https://www.samhsa.gov/data/substance-abuse-facilities-data-nssats
+Description,"Number of substance abuse treatment facilities offering any form of medication assisted treatment (MAT) and accept Medicaid. Data are from The National Survey of Substance Abuse Treatment Facilities (N-SSATS) - an annual survey of U.S. facilities offering treatment services for alcohol and drug abuse. Treatment programs that offers at least one of the medication used in the treatment of substance abuse disorders (methadone, buprenorphine, or naltrexone) are included. These include facilities coded with any of the following: BM (Buprenorphin maintenance), BMW (Buprenorphine maintenance for a pre-determined time), BU (Buprenorphine used in treatment), BUM (Buprenorphine maintenance (<2016)), DB (Buprenorphine detoxification), DM (Methadone detoxification), METH (Methadone), MM (Methadone maintenance), MMW (Methandone maintenance for pre-determined time), NXN (Naltrexone (oral)), UBN (Prescribes/administers buprenorphine and/or naltrexone), VTRL (Extended-release, injectable naltrexone). Medicaid accepting facilities are identified from key code MD (Medicaid) in the N-SSATS data."
+Technical Notes,N/A
+,
+Indicator Name,Facilities Providing Substance Abuse Services
+Name in Downloads,SA_fac
+Short Description,Number of facilities that provide substance abuse services.
+Available Geography,"State, District, County"
+Available Years,"2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017"
+Source,Substance Abuse and Mental Health Services Administration.
+Source Link,https://www.samhsa.gov/data/substance-abuse-facilities-data-nssats
+Description,"Number of facilities that provide substance abuse services. Data are from The National Survey of Substance Abuse Treatment Facilities (N-SSATS) - an annual survey of U.S. facilities offering treatment services for alcohol and drug abuse. Types of care include substance abuse treatment, detoxification, transitional housing or halfway houses, prescribing of buprenorphine and/or naltrexone, or SAMHSA-certified Opioid Treatment Programs. Facilities include hospital inpatient, residential, or outpatient."
+Technical Notes,N/A
+,
+Indicator Name,Facilities Providing at Least Two Different Forms of Medication Assisted Treatment
+Name in Downloads,TMAT_fac
+Short Description,Number of substance abuse treatment facilities offering at least two forms of MAT
+Available Geography,"State, District, County"
+Available Years,"2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017"
+Source,Substance Abuse and Mental Health Services Administration.
+Source Link,https://www.samhsa.gov/data/substance-abuse-facilities-data-nssats
+Description,"Number of substance abuse treatment facilities offering at least two forms of medication assisted treatment (MAT). Data are from The National Survey of Substance Abuse Treatment Facilities (N-SSATS) - an annual survey of U.S. facilities offering treatment services for alcohol and drug abuse. Treatment programs that offer any two of the medications used in the treatment of substance abuse disorders (methadone, buprenorphine, or naltrexone) are included. These include facilities coded with at least two different services: Buprenorphine - BM (Buprenorphine maintenance), BMW (Buprenorphine maintenance for a pre-determined time), BU (Buprenorphine used in treatment), BUM (Buprenorphine maintenance (<2016)), DB (Buprenorphine detoxification); Methadone - DM (Methadone detoxification), METH (Methadone), MM (Methadone maintenance), MMW (Methandone maintenance for pre-determined time); and/or Naltrexone - NXN (Naltrexone (oral)), VTRL (Extended-release, injectable naltrexone). Facilities coded as UBN (Prescribes/administers buprenorphine and/or naltrexone) that do not individually report either buprenorphine or naltrexone are only included if the facility also offers one of the Methadone codes."
+Technical Notes,N/A
+,
+Indicator Name,Facilities Providing at Least Two Different Forms of Medication Assisted Treatment and Accepting Medicaid
+Name in Downloads,Med_TMAT_fac
+Short Description,Number of substance abuse treatment facilities offering at least two forms of MAT and accept Medicaid
+Available Geography,"State, District, County"
+Available Years,"2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017"
+Source,Substance Abuse and Mental Health Services Administration.
+Source Link,https://www.samhsa.gov/data/substance-abuse-facilities-data-nssats
+Description,"Number of substance abuse treatment facilities offering at least two forms of medication assisted treatment (MAT) and accept Medicaid. Data are from The National Survey of Substance Abuse Treatment Facilities (N-SSATS) - an annual survey of U.S. facilities offering treatment services for alcohol and drug abuse. Treatment programs that offer any two of the medications used in the treatment of substance abuse disorders (methadone, buprenorphine, or naltrexone) are included. These include facilities coded with at least two different services: Buprenorphine - BM (Buprenorphine maintenance), BMW (Buprenorphine maintenance for a pre-determined time), BU (Buprenorphine used in treatment), BUM (Buprenorphine maintenance (<2016)), DB (Buprenorphine detoxification); Methadone - DM (Methadone detoxification), METH (Methadone), MM (Methadone maintenance), MMW (Methandone maintenance for pre-determined time); and/or Naltrexone - NXN (Naltrexone (oral)), VTRL (Extended-release, injectable naltrexone). Facilities coded as UBN (Prescribes/administers buprenorphine and/or naltrexone) that do not individually report either buprenorphine or naltrexone are only included if the facility also offers one of the Methadone codes. Medicaid accepting facilities are identified from key code MD (Medicaid) in the N-SSATS data."
+Technical Notes,N/A
+,
+Indicator Name,"HIV Prevalence per 100,000"
+Name in Downloads,HIVprevalence
+Short Description,"Number of people living with diagnosed HIV per 100,000, among adults and adolescents 13 and older."
+Available Geography,"State, District, County"
+Available Years,"2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015"
+Source,Centers for Disease Control and Prevention
+Source Link,https://gis.cdc.gov/grasp/nchhstpatlas/main.html
+Description,"Number of people living with diagnosed HIV per 100,000, among adults and adolescents 13 and older (children represent approximately 0.2% of new HIV infections in any year). All sub-national data representing zero to four (0-4) persons are suppressed."
+Technical Notes,N/A
+,
+Indicator Name,HOPWA Allocations and Awards
+Name in Downloads,HOPWA_funds
+Short Description,Awards and allocations through the Housing Opportunities for Persons With AIDS program.
+Available Geography,State
+Available Years,2017
+Source,Department of Housing and Urban Development
+Source Link,https://www.hudexchange.info/grantees/allocations-awards/?params=%7B%22limit%22%3A20%2C%22COC%22%3Afalse%2C%22sort%22%3A%22%22%2C%22min%22%3A%22%22%2C%22years%22%3A%5B%5D%2C%22dir%22%3A%22%22%2C%22grantees%22%3A%5B%5D%2C%22state%22%3A%22%22%2C%22programs%22%3A%5B8%5D%2C%22max%22%3A%22%22%7D
+Description,"The Housing Opportunities for Persons With AIDS (HOPWA) Program is the only Federal program dedicated to the housing needs of people living with HIV/AIDS. Under the HOPWA Program, HUD makes grants to local communities, States, and nonprofit organizations for projects that benefit low-income persons living with HIV/AIDS and their families."
+Technical Notes,N/A
+,
+Indicator Name,"Hepatitis C Prevalence per 100,000"
+Name in Downloads,HCVprevalence
+Short Description,"Estimated number of persons living with Hepatitis C antibodies, per 100,000 population"
+Available Geography,State
+Available Years,2010
+Source,"HepVu. Emory University, Rollins School of Public Health."
+Source Link,https://hepvu.org
+Description,"Estimated number of persons living with Hepatitis C antibodies, scaled by population. A positive Hepatitis C antibody test means that a person has ever been exposed to the virus, and includes the 15-20% of people infected with HCV that spontaneously clear the virus without treatment.  Since this measure includes both current and historic cases of HCV, it is likely to be overestimate the current prevalence. The latest available estimates are from 2010, and therefore do not reflect the tripling in acute HCV infections from 2010-2015.  Data not available for Puerto Rico."
+Technical Notes,Not currently available for download.
+,
+Indicator Name,"Inpatient Stays Resulting from Opioids per 100,000"
+Name in Downloads,op_rel_inpat
+Short Description,"Rate of opioid-related inpatient stays per 100,000 population"
+Available Geography,State
+Available Years,"2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015"
+Source,Agency for Healthcare Research and Quality.
+Source Link,https://www.hcup-us.ahrq.gov
+Description,"Rate of opioid-related inpatient stays per 100,000 population. Inpatient stays are all formally-admitted hospital stays, and include those admitted through the emergency department. Data are from the Agency for Healthcare Research and Quality (AHRQ), Healthcare Cost and Utilization Project (HCUP), and the National Inpatient Sample (NIS). The NIS is based on the data collection efforts of data organizations in participating States that maintain statewide data systems and that have partnered with AHRQ. Data from non-Partner States are missing completely from the sampling frame, and data from Partner States are sometimes incomplete because of different State reporting requirements, different State restrictions, or other data omissions. The full list of ICD-10 codes included in the opioid-related stay category are described in greater detail in the data source."
+Technical Notes,N/A
+,
+Indicator Name,Jurisdictions that have Completed a CDC Consultation
+Name in Downloads,CDC_consult
+Short Description,Jurisdictions with a submitted request for a CDC Consultation
+Available Geography,"State, District, County"
+Available Years,2017
+Source,Centers for Disease Control and Prevention
+Source Link,https://www.cdc.gov/hiv/risk/ssps-jurisdictions.html
+Description,"Since 2016, federal funding from the Department of Health and Human Services (DHHS) can be used to support syringe exchange programs (SEPs). Before these funds may be used for SEPs, each jurisdiction must submit a request to the Centers for Disease Control and Prevention (CDC) demonstrating that they are experiencing or at high risk of experiencing an HIV or hepatitis outbreak related to drug use."
+Technical Notes,"Counties are coded as 2 if a statewide consulation has been completed, 1 if a county consultation has been completed but not a statewide consultation, and 0 otherwise. States are coded as 0 if no jurisdictions have completed, 1 if some jurisdictions within the state have completed the consultation, and 2 if the state has completed. UPDATED WEEKLY."
+,
+Indicator Name,Law Enforcement Seizures of Fentanyl
+Name in Downloads,fentanyl_seize
+Short Description,The number of illicit drug seizures that were tested and confirmed to contain fentanyl.
+Available Geography,State
+Available Years,"2015, 2016"
+Source,"DEA National Drug Threat Assessment (NDTA), 2016 and 2017"
+Source Link,2016:https://www.dea.gov/resource-center/2016%20NDTA%20Summary.pdf | 2017:https://www.dea.gov/docs/DIR-040-17_2017-NDTA.pdf
+Description,"The total number of drug seizures that were tested by forensic laboratories and reported to contain fentanyl to the Drug Enforcement Agency's (DEA) National Forensic Laboratory Information System (NFLIS) in a calendar year (currently only available for 2015 and 2016). The NFLIS collects drug chemistry analysis results, as well as other related information, from cases analyzed by state, local and federal forensic laboratories. These laboratories analyze substances secured in law enforcement operations across the country."
+Technical Notes,N/A
+,
+Indicator Name,New HIV Diagnoses
+Name in Downloads,HIVdiagnoses
+Short Description,"Number of new HIV diagnoses in one year, among adults and adolescents 13 and older."
+Available Geography,"State, District, County"
+Available Years,"2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016"
+Source,Centers for Disease Control and Prevention
+Source Link,https://gis.cdc.gov/grasp/nchhstpatlas/main.html
+Description,"Number of new HIV diagnoses in one year, among adults and adolescents 13 and older (children represent approximately 0.2% of new HIV infections in any year). All sub-national data representing zero to four (0-4) diagnoses are suppressed. Corresponding sub-national denominator population figures are also suppressed when the population represents fewer than 5 persons."
+Technical Notes,N/A
+,
+Indicator Name,"New HIV Diagnoses per 100,000"
+Name in Downloads,HIVincidence
+Short Description,"Number of new HIV diagnoses per 100,000 in one year"
+Available Geography,"State, District, County"
+Available Years,"2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016"
+Source,Centers for Disease Control and Prevention
+Source Link,https://gis.cdc.gov/grasp/nchhstpatlas/main.html
+Description,"Number of new HIV diagnoses per 100,000 in one year, among adults and adolescents 13 and older (children represent approximately 0.2% of new HIV infections in any year). All sub-national data representing zero to four (0-4) diagnoses are suppressed. Corresponding sub-national denominator population figures are also suppressed when the population represents fewer than 5 persons."
+Technical Notes,N/A
+,
+Indicator Name,Number of 30 Days Supply of Opioids per Part D Enrollee
+Name in Downloads,partD30dayrxrate
+Short Description,"The number of standardized 30-day supplies of opioids reimbursed by Medicare Part D, per Medicare Part D enrollee."
+Available Geography,"State, District, County"
+Available Years,2015
+Source,Centers for Medicare and Medicaid Services.
+Source Link,https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/PartD2015.html
+Description,"The number of standardized 30-day supplies of opioids reimbursed by Medicare Part D, per Medicare Part D enrollee. A standardized 30-day supply is bottom coded at 1, and top coded at 12. This means efforts to reduce the number of doses per prescription are not well captured by this measure. However, as the state-level data do not contain the actual days' supply, the 30-day supply measure was used for consistency. State data on the number of prescriptions come from the Part D Prescriber Summary table, which detail the number of standardized 30-day supplies of each drug billed to Medicare per state. County data were aggregated from the Part D Prescriber Public Use File (PUF), which contains data at the provider-drug level. Providers were matched to their ZIP code by using their unique National Provider Identifier (NPI) in the July 2015 NPPES Data Dissemination. The July 2015 NPPES Data Dissemination was accessed via <a href='https://archive.org/' target=_blank>archive.org</a>, as it is not currently posted publicly but is available upon request. The standardized 30-day supply measure was also used at the county level, although days' supply, a more accurate measure of the volume prescribed, is available in the Prescriber PUF. Part D enrollment data comes from the <a href='https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/CMSProgramStatistics/Dashboard.html', target=_blank>Medicare Enrollment Dashboard.</a>"
+Technical Notes,N/A
+,
+Indicator Name,Number of People Living with Diagnosed HIV
+Name in Downloads,PLHIV
+Short Description,"Number of people living with diagnosed HIV, among adults and adolescents 13 and older."
+Available Geography,"State, District, County"
+Available Years,"2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015"
+Source,Centers for Disease Control and Prevention
+Source Link,https://gis.cdc.gov/grasp/nchhstpatlas/main.html
+Description,"Number of people living with diagnosed HIV, among adults and adolescents 13 and older (children represent approximately 0.2% of new HIV infections in any year). All sub-national data representing zero to four (0-4) persons are suppressed. Corresponding sub-national denominator population figures are also suppressed when the population represents fewer than 5 persons."
+Technical Notes,N/A
+,
+Indicator Name,Number of People with Hepatitis C
+Name in Downloads,HCVcases
+Short Description,Estimated number of persons living with Hepatitis C antibodies
+Available Geography,State
+Available Years,2010
+Source,"HepVu. Emory University, Rollins School of Public Health."
+Source Link,https://hepvu.org
+Description,"Estimated number of persons living with Hepatitis C antibodies. A positive Hepatitis C antibody test means that a person has ever been exposed to the virus, and includes the <a href='https://www.cdc.gov/hepatitis/hcv/hcvfaq.htm' target=_blank>15-25% of people infected with HCV that spontaneously clear</a> the virus without treatment.  Since this measure includes both current and historic cases of HCV, it is likely to be overestimate the current prevalence. The latest available estimates are from 2010, and therefore do not reflect the tripling in acute HCV infections from 2010-2015. Data not available for Puerto Rico."
+Technical Notes,Not currently available for download.
+,
+Indicator Name,"Opioids prescribed per capita, in morphine mg equivalents (MME)"
+Name in Downloads,mme_percap
+Short Description,"Opioids prescribed per capita, in morphine mg equivalents (MME)"
+Available Geography,"State, District, County"
+Available Years,"2010, 2015"
+Source,Centers for Disease Control and Prevention
+Source Link,https://www.cdc.gov/mmwr/volumes/66/wr/mm6626a4.htm?s_cid=mm6626a4_w
+Description,"The amount of opioids prescribed, in morphine milligram equivalents (MME) per population. MME measurement allows for direct comparison of different opioids by accounting for differing potencies. The average daily MME per prescription was 48.1 in 2015, and prescriptions for 90 MME per day and up are considered to be ""high-dose"". This measure is from a recently published Centers for Disease Control and Prevention (CDC) report entitled ""Vital Signs: Changes in Opioid Prescribing in the United States, 2006-2015"" which uses retail prescription data from QuintilesIMS. County-level data were shared privately by CDC."
+Technical Notes,Not currently available for download.
+,
+Indicator Name,Percent Needing but Not Receiving Addiction Treatment
+Name in Downloads,pctunmetneed
+Short Description,Percent of total population needing but not receiving treatment for illicit drug use
+Available Geography,"State, District, County"
+Available Years,2016
+Source,Substance Abuse and Mental Health Services Administration.
+Source Link,https://www.samhsa.gov/data/population-data-nsduh
+Description,"Percent of total population aged 12 or older reporting needing but not receiving treatment for illicit drug use in the past year divided by the percent of total population aged 12 or older reporting illicit drug dependence or abuse in the past year. Data are from the National Survey on Drug Use and Health (NSDUH). Data are available at the national, state, and substate region level, with data linked to counties using the <a href='https://www.samhsa.gov/data/sites/default/files/NSDUHsubstateRegionDefs2014/NSDUHsubstateRegionDefs2014.pdf' target=_blank>""2012-2014 National Survey on Drug Use and Health Substate Region Definitions</a>."" Sub-state data should be interpreted with caution. Data not available for Puerto Rico."
+Technical Notes,N/A
+,
+Indicator Name,Percent of Drug Treatment Paid by Medicaid
+Name in Downloads,pct_tx_med
+Short Description,Percent of buprenorphine or naloxone drug treatment that is paid by Medicaid
+Available Geography,State
+Available Years,2016
+Source,IMS Institute for Healthcare Informatics.
+Source Link,https://www.imshealth.com/files/web/IMSH%20Institute/Reports/Healthcare%20Briefs/IIHI_Use_of_Opioid_Recovery_Medications.pdf
+Description,Percentage of buprenorphine and buprenorphine/naloxone combination prescriptions covered by Medicaid. Data not available for Puerto Rico.
+Technical Notes,N/A
+,
+Indicator Name,Percent of People 12+ Reporting Drug Dependence
+Name in Downloads,drugdep
+Short Description,Percent of People 12+ Reporting Drug Dependence
+Available Geography,"State, District, County"
+Available Years,2016
+Source,Substance Abuse and Mental Health Services Administration.
+Source Link,https://www.samhsa.gov/data/population-data-nsduh
+Description,"Percent of total population aged 12 or older reporting illicit drug dependence or abuse in the past year from the National Survey on Drug use and Health (NSDUH). Data are available at the national, state, and substate region level, with data linked to counties using the <a href='https://www.samhsa.gov/data/sites/default/files/NSDUHsubstateRegionDefs2014/NSDUHsubstateRegionDefs2014.pdf' target=_blank>2012-2014 National Survey on Drug Use and Health Substate Region Definitions</a>. Data not available for Puerto Rico."
+Technical Notes,N/A
+,
+Indicator Name,Percent of People without Health Insurance
+Name in Downloads,pctunins
+Short Description,Percent of the civilian noninstitutionalized population with no health insurance coverage.
+Available Geography,"State, District, County"
+Available Years,"2015, 2016"
+Source,United States Census.
+Source Link,https://factfinder.census.gov
+Description,Percent of the civilian noninstitutionalized population with no health insurance coverage. Data are from the Selected Economic Characteristics table from the American Community Survey 5-Year Estimates.
+Technical Notes,N/A
+,
+Indicator Name,Percent of Population 12 or Older Reporting Non-medical Use of Pain Relievers
+Name in Downloads,nonmedpain
+Short Description,Percent of Population 12 or Older Reporting Non-medical Use of Pain Relievers
+Available Geography,"State, District, County"
+Available Years,2016
+Source,Substance Abuse and Mental Health Services Administration.
+Source Link,https://www.samhsa.gov/data/population-data-nsduh
+Description,"Percent of total population aged 12 or older reporting nonmedical use of pain relievers in the past year from the National Survey on Drug Use and Health (NSDUH). Data are available at the national, state, and substate region level, with data linked to counties using the <a href='https://www.samhsa.gov/data/sites/default/files/NSDUHsubstateRegionDefs2014/NSDUHsubstateRegionDefs2014.pdf' target=_blank>""2012-2014 National Survey on Drug Use and Health Substate Region Definitions</a>."" Data not available for Puerto Rico."
+Technical Notes,N/A
+,
+Indicator Name,Physicians Licensed to Administer Buprenorphine
+Name in Downloads,bup_phys
+Short Description,Physicians Licensed to Administer Buprenorphine
+Available Geography,"State, District, County"
+Available Years,2017
+Source,Substance Abuse and Mental Health Services Administration
+Source Link,https://www.samhsa.gov/medication-assisted-treatment/physician-program-data/treatment-physician-locator
+Description,"Number of physicians authorized to treat opioid dependency with buprenorphine by state. This includes physicians at substance abuse treatment facilities, as well as DATA-certified physicians."
+Technical Notes,N/A
+,
+Indicator Name,Population
+Name in Downloads,Population
+Short Description,Population estimate by state from the US Census Bureau
+Available Geography,State
+Available Years,"2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016"
+Source,United States Census.
+Source Link,https://factfinder.census.gov
+Description,"Population estimates are from the United States Census' Annual Estimates of the Resident Population, all ages. Data are available from American FactFinder."
+Technical Notes,N/A
+,
+Indicator Name,Prescribers Required to Check PDMP
+Name in Downloads,PDMP_check_req
+Short Description,Are prescribers required to check PDMP before prescribing controlled substances?
+Available Geography,State
+Available Years,2016
+Source,Prescription Drug Abuse Policy System.
+Source Link,http://pdaps.org/datasets/prescription-monitoring-program-laws-1408223416-1502818373
+Description,"Almost all states have a Prescription Drug Monitorning Program (PDMP), and most require dispensers to report data to the PDMP, but relatively few states require prescribers to check the PDMP before prescribing controlled substances."
+Technical Notes,"Coded: 0-No Check Required, 1-Check Required"
+,
+Indicator Name,Ryan White Funding
+Name in Downloads,RW_funds
+Short Description,Ryan White Program funding
+Available Geography,State
+Available Years,2016
+Source,Health Resources and Services Administration.
+Source Link,Part A:https://hab.hrsa.gov/about-ryan-white-hivaids-program/fy-2016-ryan-white-part-a-grant-awards | Part B:https://hab.hrsa.gov/about-ryan-white-hivaids-program/fy-2016-ryan-white-hivaids-program-part-b-grant-awards | Part C Capacity Development:https://hab.hrsa.gov/awards/partcfy16 | Part C Early Intervention:https://hab.hrsa.gov/awards/partceisfy16 | Part D:https://hab.hrsa.gov/awards/partdfy16 | Part F Dental Programs:https://hab.hrsa.gov/awards/partffy16
+Description,"The Ryan White HIV/AIDS Program provides a comprehensive system of care that includes primary medical care and essential support services for people living with HIV who are uninsured or underinsured. The Program works with cities, states, and local community-based organizations to provide HIV care and treatment services to more than half a million people each year. Part C funding totals include both Early Intervention Services and Capacity Development Program grants. Part F funding totals include only the Dental Programs. Find <a href='https://hab.hrsa.gov/about-ryan-white-hivaids-program/about-ryan-white-hivaids-program' target=_blank>more information about the Ryan White HIV/AIDS Program here.</a>"
+Technical Notes,N/A
+,
+Indicator Name,Substance Abuse Services Facilities Accepting Medicaid
+Name in Downloads,Med_SA_fac
+Short Description,Number of facilities that provide substance abuse services and accept Medicaid.
+Available Geography,"State, District, County"
+Available Years,"2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017"
+Source,Substance Abuse and Mental Health Services Administration.
+Source Link,https://www.samhsa.gov/data/substance-abuse-facilities-data-nssats
+Description,"Number of facilities that provide substance abuse services and accept Medicaid. Data are from The National Survey of Substance Abuse Treatment Facilities (N-SSATS) - an annual survey of U.S. facilities offering treatment services for alcohol and drug abuse. Types of care include substance abuse treatment, detoxification, transitional housing or halfway houses, prescribing of buprenorphine and/or naltrexone, or SAMHSA-certified Opioid Treatment Programs. Facilities include hospital inpatient, residential, or outpatient. Medicaid accepting facilities are identified from key code MD in the N-SSATS facilities catelog."
+Technical Notes,N/A
+,
+Indicator Name,Syringe Exchange Program Legality
+Name in Downloads,SSP_legality
+Short Description,States that have authorized syringe exchange programs
+Available Geography,State
+Available Years,2017
+Source,HIV Prevention Justice Alliance.
+Source Link,http://www.preventionjustice.org/wp-content/uploads/2017/03/TAG-IDU-HIV-and-HCV-prevention-webinar-3.20.17.pdf
+Description,"Indicates whether states have specifically authorized syringe service programs statewide in legislation. States where local units have interpreted state laws to allow syringe access services or where no law prohibits syringe exchange are considered to permit syringe exchange programs. States with pilot programs, those where syringe exchange would require legislative action and/or supportive interpretation of local laws, or those with pending syringe exchange legislation are considered illegal. State laws were gathered from the HIV Prevention Justice Alliance, and compared against current syringe exchange program legislation on state government websites to review accuracy and up-to-date status."
+Technical Notes,"Coded: 0-illegal, 1-permitted, 2-legal"
+,
+Indicator Name,Syringe Exchange Programs
+Name in Downloads,num_SSPs
+Short Description,Total number of syringe exchange programs.
+Available Geography,"State, District, County"
+Available Years,2017
+Source,North American Syringe Exchange Network.
+Source Link,https://nasen.org/directory
+Description,Total number of syringe exchange programs. The directory of syringe exchange programs is aggregated by self-reporting to the North American Syringe Exchange Network (NASEN) and is therefore unlikely to be a comprehensive and complete list of all syringe exchange programs. Does not include programs that do not distribute syringes. Syringe exchange programs wishing to be identified in the database should contact NASEN to be added to the file.
+Technical Notes,UPDATED WEEKLY.
+,
+Indicator Name,Vulnerable County Rank
+Name in Downloads,vulnerable_rank
+Short Description,Counties assessed by CDC to be vulnerable to an HIV or HCV outbreak among people who inject drugs.
+Available Geography,County
+Available Years,2016
+Source,Centers for Disease Control and Prevention
+Source Link,https://www.ncbi.nlm.nih.gov/pubmed/27763996
+Description,"vulnerable_rank. In 2016, the CDC identified 220 counties at risk of experiencing an outbreak of HIV and/or hepatitis C among people that inject drugs. These represent only the top 5% of counties in the nation based on 6 factors assessed. The article abstract is available <a href=' https://www.ncbi.nlm.nih.gov/pubmed/27763996' target=_blank>here.</a>"
+Technical Notes,N/A

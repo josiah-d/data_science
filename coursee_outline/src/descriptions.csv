@@ -1,0 +1,77 @@
+# Descriptions of repos that will show up in links
+git-intro, Git Intro
+unix, Unix
+python-intro, Python Intro
+oop, Object-Oriented Programming
+numpy, Numpy
+linear-algebra, Linear Algebra
+pandas, Pandas
+matplotlib, Matplotlib
+pandas-eda-case-study, Pandas EDA Case study
+probability-distributions, Probability Distributions
+binomial-tests, Binomial Tests
+sampling-distributions, Sampling Distributions
+law-of-large-numbers, The Law of Large Numbers
+central-limit-theorem, The Central Limit Theorem
+maximum-likelihood, Maximum-Likelihood Estimation
+hypothesis-testing, Hypothesis Testing
+statistical-power, Statistical Power
+bayes-intro, Intro to Bayesian Statistics
+bayes-testing, Bayesian Hypothesis Testing
+docker, Docker
+aws, AWS
+sql, SQL
+sql-python, SQL from Python
+sql-intro, Introduction to SQL
+sql-advanced, Advanced SQL
+algorithmic-complexity, Algorithmic Complexity
+web-scraping, Web Scraping
+mongo-db, MongoDB
+spark-rdds, Spark
+spark-dfs, SQL and Dataframes in Spark
+spark-case-study, Spark Case Study
+knn, K-Nearest Neighbors
+cross-validation, Cross Validation
+linear-regression-eda, Intro to Linear Regression
+predictive-linear-regression, Predictive Linear Regression
+regularized-regression, Regularized Regression
+logistic-regression, Logistic Regression
+gradient-descent, Gradient Descent
+decision-rules, Decision Rules
+regression-case-study, Regression Case Study
+time-series, Time Series
+decision-trees, Decision Trees
+random-forests-implementation, Random Forests - Implementation
+random-forests-application, Random Forests - Application
+boosting-implementation, Boosting - Implementation
+gradient-boosted-regression, Gradient Boosted Regressors
+gradient-boosted-classification, Gradient Boosted Classifiers
+perceptrons, Multi-Layer Perceptrons
+recurrent-neural-nets, Recurrent Neural Networks
+supervised-learning-case-study, Supervised Learning Case Study
+image-processing, Image Processing
+convolutional-neural-nets, Convolutional Neural Networks
+nlp, Natural Language Processing
+text-classification, Text Classification and Naive Bayes
+clustering, Clustering
+pca, Principal-Component Analysis
+svd, Singluar Value Decomposition
+topic-modeling, Topic Modeling with NMF
+nlp-case-study, NLP Case Study
+flask, Building Data Products with Flask
+graphs-searching, Introduction to Graphs
+time-series-arima, Time Series and ARIMA
+latent-dirichlet-allocation, Latent Dirichlet Allocation
+content-based-recommenders, Content-Based Recommenders
+similarity-based-recommenders, Similarity-Based Recommenders
+factorization-recommenders, Factorization Recommenders
+recommender-case-study, Recommender Case Study
+mcmc, Markov-Chain Monte Carlo
+autoencoders, Autoencoders
+transfer-learning, Transfer Learning
+multi-armed-bandit, The Multi-Armed Bandit Problem
+reinforcement-learning, Reinforcement Learning
+fraud-detection-case-study, Fraud-Detection Case Study
+
+inferential-regression, Inferential Regression
+inferential-linear-regression, Inferential Linear Regression
